@@ -1,1 +1,148 @@
-test
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Waffle's wecipe wafflehouse</title>
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css" media="screen">
+
+    <script src="/index.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- The <i> tag below includes the lizard hand icon from Font Awesome.  Do not directly style this element. -->
+      <a href="#"><h1 class="site-title"><i class="far fa-hand-lizard"></i> Waffles</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <!--li class="navitem navlink active"><a href="#">Home</a></li-->  <!-- This will be very needed later --?
+          <!--li class="navitem navlink"><a href="#">Trending</a></li-->
+          <!--li class="navitem navlink"><a href="#">People</a></li-->
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>      <!-- We can make it popup as an extra stuff -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="recipe-container">
+
+    <article class="recipe-card">
+        <div class="recipe-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <!-- bread icon OR an uploaded picture-->
+          <!-- right click the card to bring up a menu to delete the recipe-->
+        </div>
+          <p class="recipe-name">
+            <a href="#">CSMajor2021</a>
+          </p>
+          <p class="recipe-author">
+            PRO_notreally_baker
+          </p>
+        </div>
+      </article>
+
+      <article class="recipe-full">
+        <div class="recipe-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <!-- bread icon OR an uploaded picture-->
+        </div>
+          <p class="recipe-name">
+            <a href="#">CSMajor2021</a>
+          </p>
+        <div class="recipe-content">
+          <p class="recipe-author">
+            PRO_notreally_baker
+          </p>
+          <p class="recipe-descritpion">
+            Watching my web dev lecture... This class is so awesome!  Pass the popcorn.
+          </p>
+          <p class="recipe-instructions">
+            Watching my web dev lecture... This class is so awesome!  Pass the popcorn.
+          </p>
+          <li class="recipe-Ingredients">
+           5 different foods
+          </li>
+          <p class="recipe-bake-time">
+            takes at least 5 minutes
+          </p>
+          <p class="recipe-number-of-servings">
+            only 1
+          </p>
+        </div>
+      </article>
+
+    </main>
+
+    <button type="button" id="create-recipe-button"><i class="fas fa-bullhorn"></i></button>
+
+    <!-- we could also have a "next" based system for each step-->
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-recipe-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Create a recipe</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="recipe-input-element">
+            <label for="recipe-name-input">Recipe name</label>
+            <textarea id="recipe-name-input"></textarea>
+          </div>
+          
+          <div class="recipe-input-element">
+            <label for="recipe-text-input">recipe description</label>
+            <textarea id="recipe-text-input"></textarea>
+          </div>
+
+          <div class="recipe-input-element">
+            <label for="recipe-Ingredients-input">Ingredient list</label>
+            <textarea id="recipe-Ingredients-input"></textarea>
+          </div>
+
+          <div class="recipe-input-element">
+            <label for="recipe-baketime-input">bake time</label>
+            <textarea id="recipe-baketime-input"></textarea>
+          </div>
+
+          <div class="recipe-Servings-element">
+            <label for="recipe-Servings-input">Number of Servings</label>
+            <textarea id="recipe-Servings-input"></textarea>
+          </div>
+
+          <div class="recipe-input-element">
+            <label for="recipe-instructions-input">Author</label>
+            <input type="text" id="recipe-instructions-input">
+          </div>
+
+          <div class="recipe-input-element">
+            <label for="recipe-attribution-input">Author</label>
+            <input type="text" id="recipe-attribution-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create recipe</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
