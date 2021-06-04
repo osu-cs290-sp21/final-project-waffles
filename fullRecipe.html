@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>A Wafflehouse Recipe</title>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="/style.css" media="screen">
+		<script src="/index.js" charset="utf-8" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<a href='#'><h1 class=  "site-title"> Wafflehouse Recipes </h1></a>
+			<nav class="navbar">
+        <ul class="navlist">
+          <!--Link to new page w/ recipes only in those categories-->
+          <!--Could be a drop down next to home if screen is too small to accommodate-->
+          <li class="navitem navlink active"><a href="#">Home</a></li>
+          <li class="navitem navlink"><a href="#">Entrées</a></li>
+          <li class="navitem navlink"><a href="#">Breakfasts</a></li>
+          <li class="navitem navlink"><a href="#">Sides</a></li>
+          <li class="navitem navlink"><a href="#">Desserts</a></li>
+          <li class="navitem navlink"><a href="#">Uncategorized</a></li>
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>      <!-- We can make it popup as an extra stuff -->
+          </li>
+        </ul>
+      </nav>
+		</header>
+
+
+		<main class = "recipes-container">
+			<article class = "recipe-full">
+				<p class = "recipe-name"> Chocolate chip cookies </p>
+				<p class = "recipe-author"> Granny Smith </p>
+				<p class = "recipe-servings"> 2 dozen </p>
+				<p class = "recipe-time"> 1 hour 30 minutes</p>
+				<p class = "recipe-description"> Nothing better than homebaked chocolate chip cookies, made with only the best of ingredients! </p>
+				<div class = "recipe-content">
+					<ul class = "recipe-ingredients">
+						<li> 1c flour </li>
+						<li> 1/4c sugar </li>
+						<li> 1/2c light brown sugar </li>
+						<li> 1 tsp salt </li>
+						<li> 1/2tsp baking powder </li>
+						<li> 1tsp vanilla extract </li>
+						<li> 1c chocolate chips </li>
+						<li> 1/2c milk </li>
+						<li> 3 eggs </li>
+						<li> butter </li>
+						<!-- Other stuff -->
+					</ul>
+					<ol class = "recipe-instructions">
+						<li> Cream together butter, sugar, and brown sugar </li>
+						<li> Add eggs, milk, and vanilla; combine </li>
+						<li> Combine flour, baking powder, and salt into a medium mixing bowl </li>
+						<li> Add dry mix to the butter and sugar, stir still combined. </li>
+						<li> Add the wet mix to the dry and stir until the dough sticks together in a single mass. </li>
+						<li> Fold in chocolate chips </li>
+						<li> Chill dough in the fridge for 30 minutes before scooping onto a baking sheet </li>
+						<li> Bake at 350 degrees for 12-15 minutes </li>
+					</ol>
+					<p class = "recipe-note"> For an easy sweet treat later, dough can be pre-scooped and frozen for up to 1 month, defrost on the fridge for a day or adding 5 minutes to the baking time.</p>
+
+				</div>
+			</article>
+		</main>
+
+	</body>
+</html>
