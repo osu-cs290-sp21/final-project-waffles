@@ -1,4 +1,4 @@
-##Recipes Website
+## Recipes Website
 This is a simple recipe website.
 
 ## Planned and Possible Features
@@ -8,5 +8,5 @@ Searching recipes
 Multiple categories for recipes to be assigned.
 Compatibility with local server.
 
-##Implemented Features
+## Implemented Features
 None yet!
