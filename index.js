@@ -78,3 +78,70 @@ function search() {
         }
     }
 }
+
+function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, recInstr, recNote) {
+    var name = recName;
+    var auth = recAuthor;
+    var serv = recServing;
+    var bake = recBake;
+    var desc = recDesc;
+    var ingre = recIng;
+    var instr = recInstr;
+    var note = recNote;
+
+    name = name.replace(/[\.,]/g, '');
+    auth = auth.replace(/[\.,]/g, '');
+    serv = serv.replace(/[\.,]/g, '');
+    bake = bake.replace(/[\.,]/g, '');
+    desc = desc.replace(/[\.,]/g, '');
+    ingre = ingre.replace(/[\.,]/g, '');
+    instr = instr.replace(/[\.,]/g, '');
+    note = note.replace(/[\.,]/g, '');
+
+    if (name == '') { 
+        window.alert("[ERROR]: PLEASE ENTER RECIPE NAME!");
+        return;
+    }
+    if (auth == '') { 
+        window.alert("[ERROR]: PLEASE ENTER AN AUTHOR!");
+        return;
+    }
+    if (serv == '') {
+        window.alert("[ERROR]: PLEASE ENTER A SERVING SIZE!");
+        return;
+    }
+    if (bake == '') {
+        window.alert("[ERROR]: PLEASE ENTER THE AMOUNT OF TIME NEEDED TO BAKE/COOK!");
+        return;
+    }
+    if (desc == '') {
+        window.alert("[ERROR]: PLEASE ENTER A BRIEF DESCRIPTION OF THE DISH!");
+        return;
+    }
+    if (ingre = '') {
+        window.alert("[ERROR]: PLEASE ENTER A LIST OF INGREDIENTS USED IN THE RECIPE!");
+        return;
+    }
+    if (instr = '') {
+        window.alert("[ERROR]: PLEASE ENTER SOME COOKING/BAKING DIRECTIONS!");
+        return;
+    }
+    if (note = '') {
+        window.alert("Please enter any addition notes you may have, if you have none, please enter 'N/A' :)");
+    }
+
+
+}
+
+function hidden(z) {
+    if ( z == false) {
+        document.getElementById('modal-backdrop').classList.remove("hidden");
+        document.getElementById('create-recipe-modal').classList.remove("hidden");
+    }
+    else {
+        document.getElementById('modal-backdrop').classList.add("hidden");
+        document.getElementById('create-recipe-modal').classList.add("hidden");
+        document.getElementById('recipe-text-input').value = "";
+        document.getElementById('recip-attribution-input').value = "";
+    }
+}
