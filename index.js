@@ -130,7 +130,65 @@ function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, re
         window.alert("Please enter any addition notes you may have, if you have none, please enter 'N/A' :)");
     }
 
+    //console.log(y);
+    //console.log(yText);
+    var temp = document.getElementsByClassName('recipe-container');
+    var rContainer = temp[0];
+    temp = null;
+    var t1 = document.createElement('card'); // creates new recipe
+    t1.classList.add('recipe');
+    var t2 = document.createElement('div');
 
+    t1.appendChild(t2); // adds to bottom of the page
+    t2.classList.add('recipe-icon');
+
+    var t3 = document.createElement('i');
+    t1.appendChild(t3); // add to bottom of webpage
+    t3.classList.add('recipe-content');
+
+    var t4 = document.createElement('w'); //create new recipe name
+    t4.classList.add('recipe-text');
+    var userTextInput1 = document.createTextNode(name);
+    t4.appendChild(userTextInput1);
+    t3.appendChild(t4);
+
+    var t5 = document.createElement('w'); // create new recipe author
+    t5.classList.add('recipe-author');
+    var userInput = document.createTextNode(auth);
+
+
+    var t6 = document.createElement('w'); // create serving size
+    t6.classList.add('recipe-serving');
+    var userTextInput2 = document.createTextNode(serv);
+
+    var t7 = document.createElement('w'); //create bake time
+    t7.classList.add('recipe-bake');
+    var userTextInput3 = document.createTextNode(bake);
+
+    var t8 = document.createElement('w'); //create recipe description
+    t8.classList.add('recipe-description');
+    var userTextInput4 = document.createTextNode(desc);
+
+    var t9 = document.createElement('w'); //create recipe ingredients
+    t9.classList.add('recipe-ingredient');
+    var userTextInput5 = document.createTextNode(ingre);
+
+    var t10 = document.createElement('w'); //create recipe instructions
+    t10.classList.add('recipe-instruction');
+    var userTextInput6 = document.createTextNode(instr);
+
+    var t11 = document.createElement('w'); //create recipe notes
+    t11.classList.add('recipe-note');
+    var userTextInput7 = document.createTextNode(note);
+
+
+    //var t12 = document.createElement('a');
+    //t12.setAttribute('href', "#");
+    //t12.appendChild(userInput);
+    //t5.appendChild(t6);
+    //t3.appendChild(t5);
+    //rContainer.appendChild(t1);
+    hidden(true);
 }
 
 function hidden(z) {
