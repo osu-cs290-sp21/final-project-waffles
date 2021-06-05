@@ -1,0 +1,62 @@
+
+<!--This should create the modal for putting info in, though it might not be fully correct. It also makes the button since one is useless without the other-->
+
+<button type = "button" id="create-recipe-button">
+  <i class="far fa-plus-square"></i>
+</button>
+
+<div id="modal-backdrop" class="hidden"></div>
+		<div id="create-recipe-modal" class="hidden">
+			<div class="modal-dialog">
+				<div class="modal-header">
+					<h3>Add a recipe</h3>
+					<button type="button" class="modal-close-button">&times;</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="recipe-input-element">
+						<label for="recipe-name-input">Recipe Name</label>
+						<textarea id="recipe-name-input"></textarea>
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-author-element">Author</label>
+						<textarea id="recipe-author-element"></textarea>
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-servings-input">Number of Servings</label>
+						<textarea id="recipe-servings-input"></textarea>
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-bake-input">Baketime</label>
+						<textarea id="recipe-bake-input"></textarea>
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-text-input">Recipe Description</label>
+						<textarea id="recipe-text-input"></textarea>
+					</div>
+
+					<!--Gonna have to turn these into lists-->
+					<!--https://stackoverflow.com/questions/45910682/making-list-from-textarea-value-by-new-lines-->
+					<!--Tell users to separate instructions by new lines-->
+					<div class="recipe-input-element">
+						<label for="recipe-ingredients-input">Recipe Ingredients</label>
+						<textarea id="recipe-ingredients-input"></textarea>
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-instructions-input">Recipe Instructions</label>
+						<textarea id="recipe-instructions-input"></textarea>
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-note-input">Recipe Note</label>
+						<textarea id="recipe-note-input"></textarea>
+					</div>
+
+
+					<div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create recipe</button>
+        	</div>
+
+				</div>
+			</div>
+		</div>
