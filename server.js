@@ -32,9 +32,10 @@ app.get('/recipe/:id', (req,res,next) => {
   var id = req.params.id;
   
   const recipeSelected = [ RecipeData[id] ]
+  
 
   if (RecipeData[id]) {
-    res.status(200).render('RecipePage', {RecipeInfo: recipeSelected});
+    res.status(200).render('RecipePage', {recipeStuff: recipeSelected});
   } else {
     next();
   }
