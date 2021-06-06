@@ -9,7 +9,7 @@ templates['RecipePage'] = template({"1":function(container,depth0,helpers,partia
     };
 
   return "	<!-- This calls the RecipeCard handlebars to make recipe cards from the saved cards -->\r\n"
-    + ((stack1 = container.invokePartial(lookupProperty(partials,"RecipeFull"),depth0,{"name":"RecipeFull","data":data,"indent":"  ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+    + ((stack1 = container.invokePartial(lookupProperty(partials,"RecipeFull"),depth0,{"name":"RecipeFull","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
