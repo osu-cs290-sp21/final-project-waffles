@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+  <!--This is the head with all of the stuff that the page will need to reference.-->
+
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+
+    <meta charset="utf-8"/>
+    <title>A Wafflehouse Recipe</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/style.css" media="screen"/>
+    <script src="/index.js" charset="utf-8" defer=""></script>
+
+
+  
+  {{#each scripts}}
+  <script src="{{@this}}"></script>
+  {{/each}}
+
+  </head>
+
+
+  <!--This creates the header which will be full of links-->
+
+  <header>
+    <a href='#'>
+      <h1 class=  "site-title"> Wafflehouse Recipes </h1>
+    </a>
+    
+    <nav class="navbar">
+      <ul class="navlist">
+        <!--Link to new page w/ recipes only in those categories-->
+        <!--Could be a drop down next to home if screen is too small to accommodate-->
+        
+        <!--this should be a clientside JS to make the buttons "search" for that type of food-->
+        <li class="navitem navlink active">
+          <a href="#">Home</a>
+        </li>
+        <li class="navitem navlink">
+          <a href="#">Entrées</a>
+        </li>
+        <li class="navitem navlink">
+          <a href="#">Breakfasts</a>
+        </li>
+        <li class="navitem navlink">
+          <a href="#">Sides</a>
+        </li>
+        <li class="navitem navlink">
+          <a href="#">Desserts</a>
+        </li>
+        <li class="navitem navlink">
+          <a href="#">Uncategorized</a>
+        </li>
+        <li class="navitem navbar-search">
+          <input type="text" id="navbar-search-input" placeholder="Search..."/>
+          <button type="button" id="navbar-search-button">
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- We can make it popup as an extra stuff -->
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <body>
+    
+          {{{body}}}
+          
+	</body>
+</html>

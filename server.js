@@ -12,7 +12,7 @@
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.engine ('handlebars', exphbs({defaultLayout: null}))
+app.engine ('handlebars', exphbs({defaultLayout: 'mainlayout'}))
 app.set('view engine', 'handlebars')
 
 app.use(express.static('public'));      //the folder it servers files from
@@ -23,8 +23,7 @@ app.get('/', function (req, res, next) {
 
   res.status(200).render('main',  {RecipeData: RecipeData})           
 
-    console.log ("rendering the main page")
-    
+    console.log ("rendering the main page")    
 });
 
 
@@ -32,26 +31,15 @@ app.get('/', function (req, res, next) {
 app.get('/recipe/:id', (req,res,next) => {
   var id = req.params.id;
   
-  const test = [ RecipeData[id] ]
+  const recipeSelected = [ RecipeData[id] ]
 
   if (RecipeData[id]) {
-    res.status(200).render('RecipePage', {RecipeInfo: test});
+    res.status(200).render('RecipePage', {RecipeInfo: recipeSelected});
   } else {
     next();
   }
 });
 
-//this called when the url asks for specific type of recipes 
-//this code needs worked on since it will be deferent than just pulling up one recipe
-app.get('/type/:id', (req,res,next) => {
-  var id = req.params.id;
-  
-  if (RecipeData[id]) {
-        res.status(200).render('main', {RecipeData: RecipeData, Recipetype: id});
-  } else {
-    next();
-  }
-});
 
 //this is the 404 page
 app.get('*', function (req, res) {
