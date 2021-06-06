@@ -54,7 +54,7 @@ function RecipesSearch() {
 }
 
 function storeRecipe(recipeID, text, author, callback) {
-  var postURL = "/recipes/" + recipesID + "/addrecipes";
+  var postURL = "/recipes/" + recipeID + "/addrecipes";
   var postRequest = new XMLHttpRequest();
   postRequest.open('POST', postURL);
   postRequest.setRequestHeader('Content-Type', 'application/json');
@@ -122,13 +122,13 @@ window.addEventListener('DOMContentLoaded', function () {
   searchInput.addEventListener('input', RecipeSearch);
 });
 /*  
-   * Create a new recipe-icon <div> element, insert bullborn with innerHTML
+   * Create a new recipe-icon <div> element, insert plussquare with innerHTML
    * (which is safe in this case because we're not dealing with user input),
    * and add the div into the new recipe element.
    */
   var recipeIconElem = document.createElement('div');
   recipeIconElem.classList.add('recipe-icon');
-  recipeIconElem.innerHTML = '<i class="fa fa-bullhorn"></i>';
+  recipeIconElem.innerHTML = '<i class="fa fa-plus-square"></i>';
   recipeElem.appendChild(recipeIconElem);
 
   /*
