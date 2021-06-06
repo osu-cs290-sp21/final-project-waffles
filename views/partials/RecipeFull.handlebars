@@ -1,0 +1,22 @@
+
+<article class = "recipe-full">
+      <p class = "recipe-name"> {{Name}} </p>
+      <p class = "recipe-author"> {{Author}} </p>
+      <p class = "recipe-servings"> {{Servings}} </p>
+      <p class = "recipe-time"> {{Time}} </p>
+      <p class = "recipe-description"> {{Description}} </p>
+      <div class = "recipe-content">
+        <ul class = "recipe-ingredients">
+          {{#each ingredients}}
+            {{>list}}
+          {{/each}}
+        </ul>
+        <ol class = "recipe-instructions">
+          {{#each instructions}}
+            {{>list}}
+          {{/each}}
+        </ol>
+        <p class = "recipe-note"> {{Note}} </p>
+
+      </div>
+    </article>
