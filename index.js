@@ -130,14 +130,13 @@ function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, re
         window.alert("Please enter any addition notes you may have, if you have none, please enter 'N/A' :)");
     }
 
-    //console.log(y);
-    //console.log(yText);
     var temp = document.getElementsByClassName('recipe-container');
     var rContainer = temp[0];
     temp = null;
-    var t1 = document.createElement('card'); // creates new recipe
-    t1.classList.add('recipe');
+    var t1 = document.createElement('recipe'); // creates new recipe
+    t1.classList.add('recipe-card');
     var t2 = document.createElement('div');
+
 
     t1.appendChild(t2); // adds to bottom of the page
     t2.classList.add('recipe-icon');
@@ -147,38 +146,38 @@ function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, re
     t3.classList.add('recipe-content');
 
     var t4 = document.createElement('w'); //create new recipe name
-    t4.classList.add('recipe-text');
+    t4.classList.add('recipe-name-input');
     var userTextInput1 = document.createTextNode(name);
     t4.appendChild(userTextInput1);
     t3.appendChild(t4);
 
     var t5 = document.createElement('w'); // create new recipe author
-    t5.classList.add('recipe-author');
+    t5.classList.add('recipe-author-element');
     var userInput = document.createTextNode(auth);
 
 
     var t6 = document.createElement('w'); // create serving size
-    t6.classList.add('recipe-serving');
+    t6.classList.add('recipe-serving-input');
     var userTextInput2 = document.createTextNode(serv);
 
     var t7 = document.createElement('w'); //create bake time
-    t7.classList.add('recipe-bake');
+    t7.classList.add('recipe-bake-input');
     var userTextInput3 = document.createTextNode(bake);
 
     var t8 = document.createElement('w'); //create recipe description
-    t8.classList.add('recipe-description');
+    t8.classList.add('recipe-text-input');
     var userTextInput4 = document.createTextNode(desc);
 
     var t9 = document.createElement('w'); //create recipe ingredients
-    t9.classList.add('recipe-ingredient');
+    t9.classList.add('recipe-ingredient-input');
     var userTextInput5 = document.createTextNode(ingre);
 
     var t10 = document.createElement('w'); //create recipe instructions
-    t10.classList.add('recipe-instruction');
+    t10.classList.add('recipe-instruction-input');
     var userTextInput6 = document.createTextNode(instr);
 
     var t11 = document.createElement('w'); //create recipe notes
-    t11.classList.add('recipe-note');
+    t11.classList.add('recipe-note-input');
     var userTextInput7 = document.createTextNode(note);
 
 
@@ -199,7 +198,35 @@ function hidden(z) {
     else {
         document.getElementById('modal-backdrop').classList.add("hidden");
         document.getElementById('create-recipe-modal').classList.add("hidden");
-        document.getElementById('recipe-text-input').value = "";
-        document.getElementById('recip-attribution-input').value = "";
+        document.getElementById('recipe-text-element').value = "";
+        document.getElementById('recipe-attribution-input').value = "";
     }
 }
+
+
+var twitButton = document.getElementById('create-twit-button');
+var temp = document.getElementsByClassName("modal-cancel-button");
+var tbCancelButton = temp[0];
+temp = null;
+var temp2 = document.getElementsByClassName("modal-close-button");
+var tbXButton = temp2[0];
+temp2 = null;
+var temp3 = document.getElementsByClassName("modal-accept-button");
+var createTwit = temp3[0];
+temp3 = null;
+var navSearch = document.getElementById("navbar-search-button");
+createTwit.addEventListener('click', function() {
+    makeTwit(document.getElementById('recipe-text-input').value, document.getElementById('twit-attribution-input').value);
+});
+tbCancelButton.addEventListener('click', function() {
+    hidden(true);
+});
+tbXButton.addEventListener('click', function() {
+    hidden(true);
+});
+twitButton.addEventListener('click', function() {
+    hidden(false);
+});
+navSearch.addEventListener('click', function() {
+    search();
+});
