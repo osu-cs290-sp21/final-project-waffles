@@ -79,6 +79,19 @@ function search() {
     }
 }
 
+function hidden(z) {
+    if ( z == false) {
+        document.getElementById('modal-backdrop').classList.remove("hidden");
+        document.getElementById('create-recipe-modal').classList.remove("hidden");
+    }
+    else {
+        document.getElementById('modal-backdrop').classList.add("hidden");
+        document.getElementById('create-recipe-modal').classList.add("hidden");
+        document.getElementById('recipe-text-element').value = "";
+        document.getElementById('recipe-attribution-input').value = "";
+    }
+}
+
 function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, recInstr, recNote) {
     var name = recName;
     var auth = recAuthor;
@@ -88,7 +101,6 @@ function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, re
     var ingre = recIng;
     var instr = recInstr;
     var note = recNote;
-
     name = name.replace(/[\.,]/g, '');
     auth = auth.replace(/[\.,]/g, '');
     serv = serv.replace(/[\.,]/g, '');
@@ -130,21 +142,33 @@ function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, re
         window.alert("Please enter any addition notes you may have, if you have none, please enter 'N/A' :)");
     }
 
+    console.log(recName);
+    console.log(recAuthor);
+    console.log(recServing);
+    console.log(recBake);
+    console.log(recDesc);
+    console.log(recIng);
+    console.log(recInstr);
+    console.log(recNote);
     var temp = document.getElementsByClassName('recipe-container');
     var rContainer = temp[0];
     temp = null;
-    var t1 = document.createElement('recipe'); // creates new recipe
+    var t1 = document.createElement('article'); // creates new recipe
     t1.classList.add('recipe-card');
     var t2 = document.createElement('div');
-
-
     t1.appendChild(t2); // adds to bottom of the page
-    t2.classList.add('recipe-icon');
+    t2.classList.add('recipe-name');
+    var t3 = document.createElement('i'); /* Image */
+    t3.classList.add('fa');
+    t3.classList.add('far fa-plus-square');
+    t2.appendChild(t3);
+    var t4 = document.createElement('div');
+    t1.appendChild(t4)
 
-    var t3 = document.createElement('i');
+
+    var t4 = document.createElement('p');
     t1.appendChild(t3); // add to bottom of webpage
-    t3.classList.add('recipe-content');
-
+    t4.classList.add('recipe-author');
     var t4 = document.createElement('w'); //create new recipe name
     t4.classList.add('recipe-name-input');
     var userTextInput1 = document.createTextNode(name);
@@ -190,21 +214,8 @@ function makeRecipe(recName, recAuthor, recServing, recBake, recDesc, recIng, re
     hidden(true);
 }
 
-function hidden(z) {
-    if ( z == false) {
-        document.getElementById('modal-backdrop').classList.remove("hidden");
-        document.getElementById('create-recipe-modal').classList.remove("hidden");
-    }
-    else {
-        document.getElementById('modal-backdrop').classList.add("hidden");
-        document.getElementById('create-recipe-modal').classList.add("hidden");
-        document.getElementById('recipe-text-element').value = "";
-        document.getElementById('recipe-attribution-input').value = "";
-    }
-}
 
-
-var twitButton = document.getElementById('create-twit-button');
+var twitButton = document.getElementById('create-recipe-button');
 var temp = document.getElementsByClassName("modal-cancel-button");
 var tbCancelButton = temp[0];
 temp = null;
@@ -212,7 +223,7 @@ var temp2 = document.getElementsByClassName("modal-close-button");
 var tbXButton = temp2[0];
 temp2 = null;
 var temp3 = document.getElementsByClassName("modal-accept-button");
-var createTwit = temp3[0];
+var createRecipe = temp3[0];
 temp3 = null;
 var navSearch = document.getElementById("navbar-search-button");
 createTwit.addEventListener('click', function() {
