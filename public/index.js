@@ -54,7 +54,7 @@ function RecipesSearch() {
 }
 
 function storeRecipe(recipeID, text, author, callback) {
-  var postURL = "/recipes/" + recipesID + "/addrecipes";
+  var postURL = "/recipes/" + recipeID + "/addrecipes";
   var postRequest = new XMLHttpRequest();
   postRequest.open('POST', postURL);
   postRequest.setRequestHeader('Content-Type', 'application/json');
@@ -122,13 +122,13 @@ window.addEventListener('DOMContentLoaded', function () {
   searchInput.addEventListener('input', RecipeSearch);
 });
 /*  
-   * Create a new recipe-icon <div> element, insert bullborn with innerHTML
+   * Create a new recipe-icon <div> element, insert plussquare with innerHTML
    * (which is safe in this case because we're not dealing with user input),
    * and add the div into the new recipe element.
    */
   var recipeIconElem = document.createElement('div');
   recipeIconElem.classList.add('recipe-icon');
-  recipeIconElem.innerHTML = '<i class="fa fa-bullhorn"></i>';
+  recipeIconElem.innerHTML = '<i class="fa fa-plus-square"></i>';
   recipeElem.appendChild(recipeIconElem);
 
   /*
@@ -174,9 +174,9 @@ var allRecipes = [];
 
 /*
  * This function checks whether all of the required inputs were supplied by
- * the user and, if so, inserts a new twit into the page using these inputs.
+ * the user and, if so, inserts a new recipe into the page using these inputs.
  * If the user did not supply a required input, they instead recieve an alert,
- * and no new twit is inserted.
+ * and no new recipe is inserted.
  */
 function handleModalAcceptClick() {
   var recipeText = document.getElementById('recipe-text-input').value;
@@ -200,7 +200,7 @@ function handleModalAcceptClick() {
 
 
 /*
- * This function clears the current search term, causing all twits to be
+ * This function clears the current search term, causing all recipes to be
  * re-inserted into the DOM.
  */
 function clearSearchAndReinsertRecipes() {
