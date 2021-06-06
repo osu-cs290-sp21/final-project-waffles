@@ -21,7 +21,7 @@ app.use(express.static('public'));      //the folder it servers files from
 //this is default page
 app.get('/', function (req, res, next) {
 
-  res.status(200).render('main',  {RecipeData: RecipeData})           
+  res.status(200).render('main',  {recipeStuff: RecipeData})           
 
     console.log ("rendering the main page")    
 });
