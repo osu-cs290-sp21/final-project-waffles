@@ -174,9 +174,9 @@ var allRecipes = [];
 
 /*
  * This function checks whether all of the required inputs were supplied by
- * the user and, if so, inserts a new twit into the page using these inputs.
+ * the user and, if so, inserts a new recipe into the page using these inputs.
  * If the user did not supply a required input, they instead recieve an alert,
- * and no new twit is inserted.
+ * and no new recipe is inserted.
  */
 function handleModalAcceptClick() {
   var recipeText = document.getElementById('recipe-text-input').value;
@@ -200,7 +200,7 @@ function handleModalAcceptClick() {
 
 
 /*
- * This function clears the current search term, causing all twits to be
+ * This function clears the current search term, causing all recipes to be
  * re-inserted into the DOM.
  */
 function clearSearchAndReinsertRecipes() {
