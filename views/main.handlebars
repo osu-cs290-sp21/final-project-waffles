@@ -1,0 +1,10 @@
+
+
+
+<main class = "recipes-container">
+  {{#each recipeStuff}}	<!-- This calls the RecipeCard handlebars to make recipe cards from the saved cards -->
+    {{>RecipeCard}}
+  {{/each}}
+
+  {{>newRecipe}} <!-- This is the fancy modal thing for adding a new Recipe -->
+</main>
