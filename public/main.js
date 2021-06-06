@@ -20,8 +20,8 @@ templates['main'] = template({"1":function(container,depth0,helpers,partials,dat
 
   return "\r\n\r\n\r\n<main class = \"recipes-container\">\r\n  "
     + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"recipeStuff") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":2},"end":{"line":7,"column":11}}})) != null ? stack1 : "")
-    + "\r\n  "
+    + "\r\n</main>\r\n\r\n  "
     + ((stack1 = container.invokePartial(lookupProperty(partials,"newRecipe"),depth0,{"name":"newRecipe","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + " <!-- This is the fancy modal thing for adding a new Recipe -->\r\n</main>";
+    + " <!-- This is the fancy modal thing for adding a new Recipe -->";
 },"usePartial":true,"useData":true});
 })();
