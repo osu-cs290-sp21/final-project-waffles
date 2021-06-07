@@ -57,5 +57,38 @@
     "instructions": [ {"List_item": "pour scoop of powder into water mix vigerously and then drink"} ],
     "Note": "in small text, this powder does not actually do anything but by purchasing you are not allowed to sue us.",
     "Type": "Joke about Generic ads and supliments"
+  },
+
+  {
+    "Name": "Famous Brownies",
+    "Author": "Fredrick George III",
+    "Servings": "16",
+    "Time": "45 minutes",
+    "Desciprtion": "Our famous brownie dessert will send you to an entire other plain of existence, eat them.",
+    "ingredients": [ {"List_item": "3 tablespoons butter(softened)"}, {"List_item":"3 tablespoons cocoa powder"},
+       {"List_item": "1 tablespoon honey"}, {"List_item": "1 teaspoon vanilla extract"}, {"List_item": "1 cup confectioners' sugar"} ],
+    "instructions": [ {"List_item": "Preheat oven to 350 degrees"}, {"List_item": "Grease and flour an 8 inch pan"},{"List_item": "Melt 1/2 cup butter in large saucepan"},
+    {"List_item": "Remove butter from heat , stir in sugar, eggs, and vanilla"}, {"List_item": "Beat 1/3 cup cocoa, 1/2 cup flour, a pinch of salt, and baking powder"},
+    {"List_item": "Spread in pan"}, {"List_item": "Bake in oven for 25 to 30 minutes"}, {"List_item": "FROSTING - Combine 3 tablespoons of butter (softened), 3 tablespoons of cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar"},
+    {"List_item": "Stir until smooth, then frost brownies while they are still warm"}, {"List_item": "Enjoy!"}],
+    "Note": "You might gain weight because you will want to eat the whole pan of brownies.",
+    "Type": "Desserts"
+  },
+
+  {
+    "Name": "Chicken Scampi",
+    "Author": "kevin.",
+    "Servings": "1",
+    "Time": "1 minute",
+    "Description": "Easy to make, butter, succulent chicken pasta",
+    "ingredients": [ {"List_item": "Kosher salt"}, {"List_item":"1 pound thinly-sliced chicken cutlets"}, {"List_item": "3 tablespoons olive oil"}, {"List_item": "8 tablespoons cubed, unsalted butter"},
+      {"List_item": "6 cloves garlic"}, {"List_item": "1/2 teaspoon crushed red pepper flakes"}, {"List_item": "1/2 cup dry white wine"}, {"List_item": "12 oz angel hair pasta"},
+      {"List_item": "1 teaspoon lemon zest and some lemon juice"}, {"List_item": "1/2 cup grated parmesan"}, {"List_item": "1/2 cup chopped parsely"} ],
+    "instructions": [ {"List_item": "Bring a pot of water to a rolling  boil and salt the water"}, {"List_item": "Sprinkle salt onto chicken"}, {"List_item": "Heat a large skillet over medium-high heat until hot, the add oil to pan"},
+      {"List_item": "Brown the chicken in the pan til golden brown but not cooked all the way through (2-3 minutes)"}, {"List_item": "Move chicken to a plate"},
+      {"List_item": "melt 4 tablespoons of butter in skillet, add garlic, red pepper flakes, and cook until garlic is golden brown"}, {"List_item": "Add wine to skillet and bring to simmer and cook until the wine reduces by half"}, 
+      {"List_item": ""} ],
+    "Note": "a little spicy",
+    "Type": "Joke about Generic ads and supliments"
   }
 ]
