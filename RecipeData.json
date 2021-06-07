@@ -7,6 +7,7 @@
     "Description": "Its food, i swear",
     "ingredients": [ {"List_item": "food???"}, {"List_item":"2 pounds of salt"} ],
     "instructions": [ {"List_item": "Stir quickly for 2 minutes"}, {"List_item":"bake in oven for 10 hours"} ],
-    "Note": "Please enjoy"
+    "Note": "Please enjoy",
+    "Type": "other"
   }
 ]
