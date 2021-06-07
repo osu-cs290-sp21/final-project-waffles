@@ -1,13 +1,61 @@
 [
   {
-    "Name": "Generic food 2",
+    "Name": "Pesto Genovese",
+    "Author": "Notafine",
+    "Servings": "1",
+    "Time": "1 minute",
+    "Description": "Make simple, delicious pesto in the time it takes your pasta to cook.",
+    "ingredients": [ {"List_item": "1 box bell/campanelle pasta"}, {"List_item":"1/4 cup pine nuts"}, {"List_item":"1 garlic clove"}, {"List_item":"Red pepper flakes"}, {"List_item":"1 container of basil"}, {"List_item":"Parmigiano-Reggiano cheese, grated"}, {"List_item":"Olive oil"}, {"List_item":"3-5 green beans"}, {"List_item":"2 fingerling potatoes, sliced into 1/4-inch rounds"} ],
+    "instructions": [ {"List_item": "Drop the pasta into salted, boiling water and cook until al dente."}, {"List_item":"In the food processor, combine the nuts, garlic and red pepper; pulse until smooth. Add the basil and 1/4 cup of grated cheese and blend again. Begin adding olive oil until a smooth pesto forms that's not overly oily. (If it gets too oily, add more cheese.)"}, {"List_item":"When the pasta has 1 minute left to cook, add the green beans and potatoes to the pasta water and cook for 1 minute. Fill a coffee mug halfway with pasta water; set aside."}, {"List_item":"Drain the pasta and veggies in a colander, then return them to the pot. Add a little olive oil, and stir to incorporate. Add the pesto and stir, making sure all the noodles are coated. Pour in some pasta water from the mug, if needed, to create a creamy texture."} ],
+    "Note": "No note, please leave note section blank",
+    "Type": "Entree"
+  },
+
+   {
+    "Name": "Waffles the 1st",
+    "Author": "OneShyOfABunch",
+    "Servings": "6",
+    "Time": "5 Minutes prep, 15 Minutes Cook",
+    "Description": "easy and quick Fluffy waffles ",
+    "ingredients": [ {"List_item": "2 eggs"}, {"List_item":"2 cups all-purpose flour"}, {"List_item":"1 & 3/4 cups milk"}, {"List_item":"1/2 cup vegetable oil"}, {"List_item":"1 tablespoon white sugar"}, {"List_item":"4 teaspoons baking powder"}, {"List_item":"1/4 teaspoon salt"}, {"List_item":"1/2 teaspoon vanilla extract"} ],
+    "instructions": [ {"List_item": "Preheat waffle iron. Beat eggs in large bowl with hand beater until fluffy. Beat in flour, milk, vegetable oil, sugar, baking powder, salt and vanilla, just until smooth."}, {"List_item":"Spray preheated waffle iron with non-stick cooking spray. Pour mix onto hot waffle iron. Cook until golden brown. Serve hot."} ],
+    "Note": "",
+    "Type": "Breakfast"
+  }, 
+  
+  {
+    "Name": "Grilled Corn on the Cob",
+    "Author": "SUETEITSMA",
+    "Servings": "6",
+    "Time": "10 minutes Prep, 30 minutes cook time",
+    "Description": "This is an easy method for grilling corn on the cob. The corn will be very tasty and tender.",
+    "ingredients": [ {"List_item": "6 ears corn"}, {"List_item":"6 tablespoons butter, softened"}, {"List_item":"salt and pepper to taste"} ],
+    "instructions": [ {"List_item": "Preheat an outdoor grill for high heat and lightly oil grate."}, {"List_item":"Peel back corn husks and remove silk. Place 1 tablespoon butter, salt and pepper on each piece of corn. Close husks."}, {"List_item":"Wrap each ear of corn tightly in aluminum foil. Place on the prepared grill. Cook approximately 30 minutes, turning occasionally, until corn is tender."} ],
+    "Note": "Requires outdoor grill",
+    "Type": "Sides"
+  },  
+  
+  {
+    "Name": " Custard-Style (French) Ice Cream",
     "Author": "Nota",
     "Servings": "23",
     "Time": "2 hours and 11 seconds",
-    "Description": "Its food, i swear",
-    "ingredients": [ {"List_item": "food???"}, {"List_item":"2 pounds of salt"} ],
-    "instructions": [ {"List_item": "Stir quickly for 2 minutes"}, {"List_item":"bake in oven for 10 hours"} ],
-    "Note": "Please enjoy",
-    "Type": "other"
-  }
+    "Description": "Make simple, delicious pesto in the time it takes your pasta to cook.",
+    "ingredients": [ {"List_item": "8 egg yolks"}, {"List_item":"1 cup granulated sugar, divided"}, {"List_item":"1 cup heavy cream"}, {"List_item":"3 cups half-and-half"}, {"List_item":"Pinch salt"}, {"List_item":"1 tablespoon vanilla extract"} ],
+    "instructions": [ {"List_item": "In a medium bowl, whisk together the egg yolks and half of the sugar. Set aside."}, {"List_item":"In a medium saucepan, stir together the cream, half-and-half, salt, and remaining sugar. Heat the mixture over medium-high heat, stirring often, until it comes to a simmer, then reduce heat to medium."}, {"List_item":"Add about 1/2 cup of the cream mixture to the egg mixture while whisking constantly (this helps prevent the eggs from cooking). Repeat with another 1/2 cup of the cream mixture."}, {"List_item":"Using a heatproof spatula, stir the cream mixture in the saucepan constantly as you pour the egg mixture into the pan."}, {"List_item":"Cook, stirring constantly, until thickened and mixture coats the back of the spatula, 1 to 2 minutes longer. Remove from heat."}, {"List_item":"Strain the mixture through a fine-mesh sieve into a clean bowl and whisk in the vanilla extract. Set the bowl in an ice bath and stir the base occasionally until it's cooled to room temperature. Remove the bowl from the ice bath, cover with plastic wrap, and refrigerate at least 2 to 4 hours or overnight before churning, either in an ice cream machine or by hand (see below for tips on how to churn ice cream)."} ],
+    "Note": "This requires a lot of tools that are not listed",
+    "Type": "Desserts"
+  },
+
+    {
+    "Name": "THE BEST FOOD EVER SUPER NUTRITION 6 DAY MEAL HEALTH EXERCISE STRENGTH TRAINING POWERDER MIXTRUE FOOD",
+    "Author": "Generic Amazon seller version 57 because the other 56 have been banned",
+    "Servings": "3000",
+    "Time": "1 minute",
+    "Description": "Our top of the line brand new formula out competes ever other thing we swear",
+    "ingredients": [ {"List_item": "1 scoop of powder"}, {"List_item":"1 cup of water"} ],
+    "instructions": [ {"List_item": "pour scoop of powder into water mix vigerously and then drink"} ],
+    "Note": "in small text, this powder does not actually do anything but by purchasing you are not allowed to sue us.",
+    "Type": "Joke about Generic ads and supliments"
+  },
 ]

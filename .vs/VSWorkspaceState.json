@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\oldhtml",
     "\\public",
     "\\views",
     "\\views\\layouts",
     "\\views\\partials"
   ],
-  "SelectedNode": "\\RecipeData.json",
+  "SelectedNode": "\\views\\main.handlebars",
   "PreviewInSolutionExplorer": false
 }
