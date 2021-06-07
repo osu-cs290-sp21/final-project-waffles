@@ -19,16 +19,13 @@ function closeCreateRecipeModal() {
 }
 
 function clearRecipeInputValues() {
-	var recipeInputElems = document.getElementsByClassName("recipe-input-element");
-	var recipeConditionInput = document.getElementById("recipe-condition-list");
-	var recipeDetailsInput = document.getElementById("recipe-details-input");
-	recipeDetailsInput = "";
-	recipeConditionInput.value = 1;
-	for (var i = 0; i < 6; i++)
-	{
-		var input = recipeInputElems[i].querySelector('input', 'textarea');
-			input.value = "";
-	}
+	var recipeInputs = document.getElementsByClassName("recipe-input-element");
+	var recipeNameInput = document.getElementById("recipe-name-input");
+	var recipeAuthorInput = document.getElementById("recipe-author-element");
+  var recipeTextInput = document.getElementById("recipe-text-input");
+	recipeNameInput.value = "";
+  recipeAuthorInput = "";
+	recipeTextInput = "";
 }
 
 function creatNewRecipe(name, author, servings, bakeTime, description, ingredients, instructions, notes) {
