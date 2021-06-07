@@ -16,19 +16,30 @@
 				<div class="modal-body">
 					<div class="recipe-input-element">
 						<label for="recipe-name-input">Recipe Name</label>
-						<textarea id="recipe-name-input"></textarea>
+						<input type="text" id="recipe-name-input" />
+						{{!-- <textarea id="recipe-name-input"></textarea> --}}
 					</div>
 					<div class="recipe-input-element">
 						<label for="recipe-author-input">Author</label>
-						<textarea id="recipe-author-input"></textarea>
+						<input type="text" id="recipe-author-input" />
+					</div>
+					<div class="recipe-input-element">
+						<label for="recipe-catetory-input">Category</label>
+						<select name="type" id="recipe-category-input">
+							<option value="Entrées">Entrées</option>
+							<option value="Breakfasts">Breakfasts</option>
+							<option value="Sides">Sides</option>
+							<option value="Desserts">Desserts</option>
+							<option value="Uncategorized" selected>Uncategorized</option>
+						</select>
 					</div>
 					<div class="recipe-input-element">
 						<label for="recipe-servings-input">Number of Servings</label>
-						<textarea id="recipe-servings-input"></textarea>
+						<input type="text" id="recipe-servings-input" />
 					</div>
 					<div class="recipe-input-element">
 						<label for="recipe-bake-input">Baketime</label>
-						<textarea id="recipe-bake-input"></textarea>
+						<input type="text" id="recipe-bake-input" />
 					</div>
 					<div class="recipe-input-element">
 						<label for="recipe-text-input">Recipe Description</label>
