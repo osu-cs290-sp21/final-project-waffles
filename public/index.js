@@ -3,6 +3,9 @@ var allRecipeElems = []; // all recipes
 function showCreateRecipe() {
 	var modalBackdrop = document.getElementById("modal-backdrop");  
 	var createRecipeModal = document.getElementById("create-recipe-modal");
+
+	console.log("test open")
+
 	createRecipeModal.classList.remove('hidden');
 	modalBackdrop.classList.remove('hidden');
 }
@@ -10,18 +13,25 @@ function showCreateRecipe() {
 function closeCreateRecipe() {
 	var modalBackdrop = document.getElementById("modal-backdrop");  
 	var createRecipeModal = document.getElementById("create-recipe-modal");
-	createrecipeModal.classList.add("hidden");
+	
+	console.log("test close")
+
+	createRecipeModal.classList.add("hidden");
 	modalBackdrop.classList.add("hidden");
 
 	clearRecipeInputValues();
 }
 
 function clearRecipeInputValues() {
+
 	var recipeInputElems = document.getElementsByClassName("recipe-input-element");
-  for (var i = 0; i < recipeInputElems.length; i++) {
-    var input = recipeInputElems[i].querySelector('input, textarea');
-    input.value = '';
-  }
+
+	  for (var i = 0; i < recipeInputElems.length; i++) {
+		var input = recipeInputElems[i].querySelector('input, textarea');
+		if (input)		//this checks to see if its not already null
+		input.value = '';
+	  }
+
 }
 
 function NewRecipeElems(name, author, servings, bakeTime, description, ingredients, instructions, notes) {
@@ -54,7 +64,7 @@ return pathComponents[2];
     var recipeAuthor = document.getElementById('recipe-author-input').value || ''; //author
   
     if (recipeName && recipeAuthor) {
-      var recipeID= getrecipeid();
+      var recipeID= getrecipeId();
       if (recipeID) {
         console.log("== recipe ID:", recipeID);
         storeRecipe(recipeID, recipeName, recipeAuthor, function (err) {
@@ -62,7 +72,7 @@ return pathComponents[2];
             alert("Unable to save recipe. Got this error:\n\n" + err);
           }
           else {
-            var recipeTemplate = Handlebars.templates.recipe;
+            var recipeTemplate = Handlebars.templates.RecipeCard;
             var templateArgs = {
               name: recipeName,
               author: recipeAuthor
@@ -73,7 +83,7 @@ return pathComponents[2];
           }
         });
       }
-      closeCreateRecipeModal();
+      closeCreateRecipe();
     }
     else {
       alert('Please enter both "name" and "author"!');
@@ -82,19 +92,21 @@ return pathComponents[2];
     name: recipeName,
     author: recipeAuthor
     };
-  postRequest.send(JSON.stringify(postBody));
+  postRequest.send(JSON.stringify(postBody));		//postRequest not defined
   }
 
 
 function recipeSearch() {
 	var searchQuery = document.getElementById("navbar-search-input").value;
-	searchQuery = searcyQuery ? searchQuery.trim().toLowerCase : '';
+	searchQuery = searchQuery ? searchQuery.trim().toLowerCase : '';
 	var recipeContainer = document.querySelector(".recipe-container");
-	while (recipeContainer.lastChild) {
-		recipeContainer.removeChild(recipeContainer.lastChild);
+	if (recipeContainer){		//this should check to make sure there is a container
+		while (recipeContainer.lastChild) {
+			recipeContainer.removeChild(recipeContainer.lastChild);
+		}
 	}
 	
-	allRecipesElems.forEach(function (recipeElem) {
+	allRecipeElems.forEach(function (recipeElem) {
 		if (!searchQuery || recipeElem.textContent.toLowerCase().indexOf(searchQuery) !== -1) {
 			recipeContainer.appendChild(recipeElem);
 		}
@@ -117,7 +129,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	modalCancelButton[0].addEventListener("click", closeCreateRecipe);
 	
 	var modalAcceptButton = document.getElementsByClassName("modal-accept-button");
-	modalAcceptButton[0].addEventListener("click", insertNewRecip);
+	modalAcceptButton[0].addEventListener("click", insertNewRecipe);
 	
 	var searchButton = document.getElementById("navbar-search-button");
 	searchButton.addEventListener("click", recipeSearch);
