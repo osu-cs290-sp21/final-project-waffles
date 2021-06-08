@@ -1,6 +1,6 @@
 var allRecipeElems = []; // all recipes
 
-function showCreateRecipe() {
+function showCreateRecipe() {		//works
 	var modalBackdrop = document.getElementById("modal-backdrop");  
 	var createRecipeModal = document.getElementById("create-recipe-modal");
 
@@ -10,7 +10,7 @@ function showCreateRecipe() {
 	modalBackdrop.classList.remove('hidden');
 }
 
-function closeCreateRecipe() {
+function closeCreateRecipe() {		//works
 	var modalBackdrop = document.getElementById("modal-backdrop");  
 	var createRecipeModal = document.getElementById("create-recipe-modal");
 	
@@ -22,7 +22,7 @@ function closeCreateRecipe() {
 	clearRecipeInputValues();
 }
 
-function clearRecipeInputValues() {
+function clearRecipeInputValues() {		//works
 
 	var recipeInputElems = document.getElementsByClassName("recipe-input-element");
 
@@ -31,10 +31,10 @@ function clearRecipeInputValues() {
 		if (input)		//this checks to see if its not already null
 		input.value = '';
 	  }
-
+	console.log("test clear")
 }
 
-function NewRecipeElems(name, author, servings, bakeTime, description, ingredients, instructions, notes) {
+function NewRecipeElems(name, author, servings, bakeTime, description, ingredients, instructions, notes) {	//unused
 	var recipeData = {
     name: recipeName,
     author: recipeAuthor,
@@ -47,12 +47,14 @@ function NewRecipeElems(name, author, servings, bakeTime, description, ingredien
 	};
 	return recipeData;
 }
+
 function getrecipeId() { //idk about this one
   var pathComponents = window.location.pathname.split('/');
   if (pathComponents[0] !== '' && pathComponents[1] !== 'recipes') {
     return null;
   }
-return pathComponents[2];
+	console.log ("test ID")
+	return pathComponents[2];
 }
 
 
@@ -60,6 +62,9 @@ return pathComponents[2];
 
 
   function insertNewRecipe(recipeName, recipeAuthor) {
+
+	console.log ("test insert crazy thing")
+
     var recipeName = document.getElementById('recipe-name-input').value || ''; //name
     var recipeAuthor = document.getElementById('recipe-author-input').value || ''; //author
   
@@ -96,15 +101,24 @@ return pathComponents[2];
   }
 
 
-function recipeSearch() {
+function recipeSearch() {	//does not search, it works overall, but doesnt actually search through the recipies
+
+	console.log ("test Search")
+
 	var searchQuery = document.getElementById("navbar-search-input").value;
 	searchQuery = searchQuery ? searchQuery.trim().toLowerCase : '';
-	var recipeContainer = document.querySelector(".recipe-container");
+
+	var recipeContainer = document.querySelector(".recipes-container");
+	
+	//console.log ("test container" + allRecipeElems)
+
 	if (recipeContainer){		//this should check to make sure there is a container
 		while (recipeContainer.lastChild) {
 			recipeContainer.removeChild(recipeContainer.lastChild);
 		}
 	}
+	
+	//console.log ("test container" + allRecipeElems)
 	
 	allRecipeElems.forEach(function (recipeElem) {
 		if (!searchQuery || recipeElem.textContent.toLowerCase().indexOf(searchQuery) !== -1) {
@@ -113,11 +127,42 @@ function recipeSearch() {
 	});
 }
 
+function buttonSearch(Buttontype){	//this should trigger when the buttons in the header are pressed, but will need the searching system worked out
+
+	console.log(Buttontype)
+
+	var recipeContainer = document.querySelector(".recipes-container");
+
+	if (recipeContainer){		//this should check to make sure there is a container
+		while (recipeContainer.lastChild) {
+			recipeContainer.removeChild(recipeContainer.lastChild);
+		}
+	}
+
+	allRecipeElems.forEach(function (recipeElem) {
+		if (recipeElem.Type == Buttontype || Buttontype == "home" ) {
+			recipeContainer.appendChild(recipeElem);
+		}
+	});
+
+}
+
 window.addEventListener("DOMContentLoaded", function () {	
-  var recipeElemsCollection = document.getElementsByClassName('recipe-container');
+
+  var recipeElemsCollection = document.getElementsByClassName('recipe-card');
   for (var i = 0; i < recipeElemsCollection.length; i++) {
     allRecipeElems.push(recipeElemsCollection[i]);
   }
+
+  //this is for the header buttons for searching	
+	var Searchbuttons = document.getElementsByClassName("navlink");
+	Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrée") });
+	Searchbuttons[2].addEventListener("click", function() { buttonSearch("Breakfast") });
+	Searchbuttons[3].addEventListener("click", function() { buttonSearch("Side") });
+	Searchbuttons[4].addEventListener("click", function() { buttonSearch("Dessert") });
+	Searchbuttons[4].addEventListener("click", function() { buttonSearch("Uncategorized") });
+	Searchbuttons[0].addEventListener("click", function() { buttonSearch("home") });
+
 
 	var createRecipeButton = document.getElementById('create-recipe-button');
 	createRecipeButton.addEventListener('click', showCreateRecipe);

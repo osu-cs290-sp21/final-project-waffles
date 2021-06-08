@@ -47,18 +47,6 @@
     "Type": "Desserts"
   },
 
-    {
-    "Name": "Generic food powder",
-    "Author": "Generic Amazon seller version 57 because the other 56 have been banned",
-    "Servings": "3000",
-    "Time": "1 minute",
-    "Description": "Our top of the line brand new formula out competes ever other thing we swear",
-    "ingredients": [ {"List_item": "1 scoop of powder"}, {"List_item":"1 cup of water"} ],
-    "instructions": [ {"List_item": "pour scoop of powder into water mix vigerously and then drink"} ],
-    "Note": "in small text, this powder does not actually do anything but by purchasing you are not allowed to sue us.",
-    "Type": "Uncategorized"
-  },
-
   {
     "Name": "Famous Brownies",
     "Author": "Fredrick George III",
