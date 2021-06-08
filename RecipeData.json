@@ -56,7 +56,7 @@
     "ingredients": [ {"List_item": "1 scoop of powder"}, {"List_item":"1 cup of water"} ],
     "instructions": [ {"List_item": "pour scoop of powder into water mix vigerously and then drink"} ],
     "Note": "in small text, this powder does not actually do anything but by purchasing you are not allowed to sue us.",
-    "Type": "Joke about Generic ads and supliments"
+    "Type": "Uncategorized"
   },
 
   {
@@ -67,7 +67,7 @@
     "Desciprtion": "Our famous brownie dessert will send you to an entire other plain of existence, eat them.",
     "ingredients": [ {"List_item": "3 tablespoons butter(softened)"}, {"List_item":"3 tablespoons cocoa powder"},
        {"List_item": "1 tablespoon honey"}, {"List_item": "1 teaspoon vanilla extract"}, {"List_item": "1 cup confectioners' sugar"} ],
-    "instructions": [ {"List_item": "Preheat oven to 350 degrees"}, {"List_item": "Grease and flour an 8 inch pan"},{"List_item": "Melt 1/2 cup butter in large saucepan"},
+    "instructions": [ {"List_item": "Preheat oven to 350 degrees F"}, {"List_item": "Grease and flour an 8 inch pan"},{"List_item": "Melt 1/2 cup butter in large saucepan"},
     {"List_item": "Remove butter from heat , stir in sugar, eggs, and vanilla"}, {"List_item": "Beat 1/3 cup cocoa, 1/2 cup flour, a pinch of salt, and baking powder"},
     {"List_item": "Spread in pan"}, {"List_item": "Bake in oven for 25 to 30 minutes"}, {"List_item": "FROSTING - Combine 3 tablespoons of butter (softened), 3 tablespoons of cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar"},
     {"List_item": "Stir until smooth, then frost brownies while they are still warm"}, {"List_item": "Enjoy!"}],
@@ -79,16 +79,72 @@
     "Name": "Chicken Scampi",
     "Author": "kevin.",
     "Servings": "1",
-    "Time": "1 minute",
+    "Time": "1 hour",
     "Description": "Easy to make, butter, succulent chicken pasta",
     "ingredients": [ {"List_item": "Kosher salt"}, {"List_item":"1 pound thinly-sliced chicken cutlets"}, {"List_item": "3 tablespoons olive oil"}, {"List_item": "8 tablespoons cubed, unsalted butter"},
       {"List_item": "6 cloves garlic"}, {"List_item": "1/2 teaspoon crushed red pepper flakes"}, {"List_item": "1/2 cup dry white wine"}, {"List_item": "12 oz angel hair pasta"},
       {"List_item": "1 teaspoon lemon zest and some lemon juice"}, {"List_item": "1/2 cup grated parmesan"}, {"List_item": "1/2 cup chopped parsely"} ],
     "instructions": [ {"List_item": "Bring a pot of water to a rolling  boil and salt the water"}, {"List_item": "Sprinkle salt onto chicken"}, {"List_item": "Heat a large skillet over medium-high heat until hot, the add oil to pan"},
       {"List_item": "Brown the chicken in the pan til golden brown but not cooked all the way through (2-3 minutes)"}, {"List_item": "Move chicken to a plate"},
-      {"List_item": "melt 4 tablespoons of butter in skillet, add garlic, red pepper flakes, and cook until garlic is golden brown"}, {"List_item": "Add wine to skillet and bring to simmer and cook until the wine reduces by half"}, 
-      {"List_item": ""} ],
+      {"List_item": "melt 4 tablespoons of butter in skillet, add garlic, red pepper flakes, and cook until garlic is golden brown"}, {"List_item": "Add wine to skillet and bring to simmer and cook until the wine reduces by half then remove from heat"}, 
+      {"List_item": "Cook pasta until al dente and reserve 1 cup of pasta water"}, {"List_item": "Add pasta water to skillet along with chicken, lemon zest and juice and remaining butter"}, 
+      {"List_item": "Stir at medium-low heat until butter is melted in"}, {"List_item": "Removed from heat, sprinkle grated cheeseand parsely on top"}, {"List_item": "YUM"} ],
     "Note": "a little spicy",
-    "Type": "Joke about Generic ads and supliments"
+    "Type": "Entree"
+  },
+
+  {
+    "Name": "Cream Cheese Stuffed French Toast",
+    "Author": "Anonymous",
+    "Servings": "4",
+    "Time": "25 minutes",
+    "Description": "Super yummy french toast with an unconventional twist",
+    "ingredients": [ {"List_item": "8 ounces whipped cream"}, {"List_item":"1 tablespoon brown sugar"}, {"List_item": "1 loaf challah breaf (cut into 8 slices)"}, 
+      {"List_item": "5 eggs"}, {"List_item": "1 cup whole milk"}, {"List_item": "1 teaspoon ground cinnamon"}, {"List_item": "1 teaspoon Vanilla extract"}, {"List_item": "1 tablespoon butter"} ],
+    "instructions": [ {"List_item": "Mix cream cheese and brown sugar in a small bowl until well incorporated"}, {"List_item": "Spread 2 tablespoons of cream cheeese mixture on each  of 4 slices of bread, then press other 4 slices of bread on top to for 4 sandwiches"},
+      {"List_item": "Whisk eggs in 13x9 inch baking dish. Stir in milk, cinnamon and vanilla until well blended"}, {"List_item": "Dip sandwiches in egg mixture, making sure that each side soaks for about 2 minutes"},
+      {"List_item": "Melt butter in large non-stick pan on medium-low heat. Place sandwiches in pan. Cook 4-5 minutes per side or until golden brown"}, {"List_item": "Serve with syrup and fruit"} ],
+    "Note": "N/A",
+    "Type": "Breakfast"
+  },
+
+  {
+    "Name": "Cornbread",
+    "Author": "Connie Kornbred",
+    "Servings": "12",
+    "Time": "30",
+    "Description": "Fluffy cornbread!",
+    "ingredients": [ {"List_item": "1/2 cup butter (unsalted)"}, {"List_item":"1 cup all-purpose flour"}, {"List_item": "1 cup yellow cornmeal"}, {"List_item": "1 tablespoon sugar"},
+      {"List_item": "2 teaspoons baking powder"}, {"List_item": "1/2 baking soda"}, {"List_item": "1/2 teaspoon salt"}, {"List_item": "1.5 cup butter milk"}, {"List_item": "2 egg"} ],
+    "instructions": [ {"List_item": "Preheat oven to 400 degrees F"}, {"List_item": "Lightly grease a 9-inch baking dish with butter and place dish in the oven to heat up"},
+      {"List_item": "In a large bowl, whisk together the flour, cornmeal, suagr, baking powder, baking soda, and salt together"}, {"List_item": "Create well in the center of dry ingredients, add buttermilk ang eggs"},
+      {"List_item": "Mix together until fully combined, then add in slightly cooled butter, mix again until everything is fully incorporated"}, {"List_item": "Remove HOT dish from oven and pour batter into hot dish"},
+      {"List_item": "Bake until the cornbread begins to brown on top (20-23 minutes)"}, {"List_item": "Let cool for 10 minutes"} ],
+    "Note": "N/A",
+    "Type": "Sides"
+  },
+
+  {
+    "Name": "Gamer juice",
+    "Author": "James Shea",
+    "Servings": "4",
+    "Time": "30 seconds",
+    "Description": "",
+    "ingredients": [ {"List_item": "mountain dew"}, {"List_item":"doritos"} ],
+    "instructions": [ {"List_item": "Take doritos out of bag"}, {"List_item": "Crush doritos"}, {"List_item": "Pour doritos in mountain dew"}, {"List_item": "shake"} ],
+    "Note": "Refueled",
+    "Type": "Uncategorized"
+  },
+
+  {
+    "Name": "",
+    "Author": "",
+    "Servings": "",
+    "Time": "",
+    "Description": "",
+    "ingredients": [ {"List_item": ""}, {"List_item":""} ],
+    "instructions": [ {"List_item": ""} ],
+    "Note": "",
+    "Type": ""
   }
 ]
