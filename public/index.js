@@ -48,6 +48,7 @@ function NewRecipeElems(name, author, servings, bakeTime, description, ingredien
 	return recipeData;
 }
 
+/*
 function getrecipeId() { //idk about this one
   var pathComponents = window.location.pathname.split('/');
   if (pathComponents[0] !== '' && pathComponents[1] !== 'recipes') {
@@ -58,7 +59,7 @@ function getrecipeId() { //idk about this one
 }
 
 
-	/* [add function to make sure all recipe boxes are filled] */
+	///* [add function to make sure all recipe boxes are filled] //
 
 
   function insertNewRecipe(recipeName, recipeAuthor) {
@@ -99,7 +100,34 @@ function getrecipeId() { //idk about this one
     };
   postRequest.send(JSON.stringify(postBody));		//postRequest not defined
   }
+  */
 
+  function insertNewRecipe() {		//this works but it does not save for searching
+
+  
+  var RecipeName = document.getElementById('recipe-name-input').value;
+  var RecipeAuthor = document.getElementById('recipe-author-input').value;
+  var RecipeDescription = document.getElementById('recipe-text-input').value;
+
+
+  if (RecipeName && RecipeAuthor && RecipeDescription) {	//isnt saved for searching
+    allRecipeElems.push({
+      Name: RecipeName,
+      Author: RecipeAuthor,
+      Description: RecipeDescription
+    });
+	
+    var Recipehtml = Handlebars.templates.RecipeCard( {Name: RecipeName, Author: RecipeAuthor, Description: RecipeDescription} )     
+    var RecipeContainer = document.querySelector('main.recipes-container');
+
+    RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+  } else {
+    alert('You must fill in all text boxes! (besides note, that is optional)');
+  }
+
+  closeCreateRecipe() 
+
+  }
 
 function recipeSearch() {	//does not search, it works overall, but doesnt actually search through the recipies
 
@@ -147,6 +175,8 @@ function buttonSearch(Buttontype){	//this should trigger when the buttons in the
 
 }
 
+
+
 window.addEventListener("DOMContentLoaded", function () {	
 
   var recipeElemsCollection = document.getElementsByClassName('recipe-card');
@@ -156,12 +186,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
   //this is for the header buttons for searching	
 	var Searchbuttons = document.getElementsByClassName("navlink");
-	Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrée") });
-	Searchbuttons[2].addEventListener("click", function() { buttonSearch("Breakfast") });
-	Searchbuttons[3].addEventListener("click", function() { buttonSearch("Side") });
-	Searchbuttons[4].addEventListener("click", function() { buttonSearch("Dessert") });
-	Searchbuttons[4].addEventListener("click", function() { buttonSearch("Uncategorized") });
-	Searchbuttons[0].addEventListener("click", function() { buttonSearch("home") });
+	Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrée"), document.querySelector(".active").classList.remove("active"), Searchbuttons[1].classList.add("active") });
+	Searchbuttons[2].addEventListener("click", function() { buttonSearch("Breakfast"), document.querySelector(".active").classList.remove("active"), Searchbuttons[2].classList.add("active") });
+	Searchbuttons[3].addEventListener("click", function() { buttonSearch("Side"), document.querySelector(".active").classList.remove("active"), Searchbuttons[3].classList.add("active") });
+	Searchbuttons[4].addEventListener("click", function() { buttonSearch("Dessert"), document.querySelector(".active").classList.remove("active"), Searchbuttons[4].classList.add("active") });
+	Searchbuttons[5].addEventListener("click", function() { buttonSearch("Uncategorized"), document.querySelector(".active").classList.remove("active"), Searchbuttons[5].classList.add("active") });
+	Searchbuttons[0].addEventListener("click", function() { buttonSearch("home"), document.querySelector(".active").classList.remove("active"), Searchbuttons[0].classList.add("active") });
 
 
 	var createRecipeButton = document.getElementById('create-recipe-button');

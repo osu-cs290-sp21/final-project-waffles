@@ -12,7 +12,8 @@
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.engine ('handlebars', exphbs({defaultLayout: 'mainlayout'}))
+
+app.engine ('handlebars', exphbs({defaultLayout: 'mainlayout', partialsDir  : [path.join(__dirname, 'views/partials'),]}))
 app.set('view engine', 'handlebars')
 
 app.use(express.static('public'));      //the folder it servers files from
