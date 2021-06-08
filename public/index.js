@@ -195,9 +195,11 @@ window.addEventListener("DOMContentLoaded", function () {
 		Searchbuttons[0].addEventListener("click", function() { buttonSearch("home"), document.querySelector(".active").classList.remove("active"), Searchbuttons[0].classList.add("active") });
 
 		//this should make it so you can click on a recipe card to go to its full recipie some CSS needs to be changed but it will work
-		var recipiescardsbuttons = document.getElementsByClassName("recipe-card");
+		var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
 			for (var i = 0; i < recipiescardsbuttons.length; i++) {
-				recipiescardsbuttons[i].setAttribute('href', window.location.host+'/recipe/'+i);
+				recipiescardsbuttons[i].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
+
+				//recipiescardsbuttons[i].addEventListener("click", function() {window.location.replace('http://' + window.location.host+'/recipe/'+i)} )
 			}
 
 
@@ -218,6 +220,17 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 		var searchInput = document.getElementById("navbar-search-input");
 		searchInput.addEventListener("input", recipeSearch);
+	}
+	else{
+	
+		var Searchbuttons = document.getElementsByClassName("navlink");
+		
+		for (var i = 0; i < Searchbuttons.length; i++) {
+			Searchbuttons[i].classList.add("hidden")
+		}
+			Searchbuttons[0].classList.remove("hidden")
+			Searchbuttons[0].classList.remove("active")
+			Searchbuttons[0].children[0].setAttribute('href', 'http://' + window.location.host)
 	}
 });
 
