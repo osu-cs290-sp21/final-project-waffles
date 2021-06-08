@@ -137,7 +137,7 @@
   },
 
   {
-    "Name": "",
+    "Name": "Lasagna",
     "Author": "",
     "Servings": "",
     "Time": "",
@@ -145,6 +145,42 @@
     "ingredients": [ {"List_item": ""}, {"List_item":""} ],
     "instructions": [ {"List_item": ""} ],
     "Note": "",
-    "Type": ""
+    "Type": "Entree"
+  },
+
+  {
+    "Name": "egg",
+    "Author": "Human",
+    "Servings": "1",
+    "Time": "",
+    "Description": "",
+    "ingredients": [ {"List_item": ""}, {"List_item":""} ],
+    "instructions": [ {"List_item": ""} ],
+    "Note": "",
+    "Type": "Breakfast"
+  },
+
+  {
+    "Name": "Mashed Potatoes",
+    "Author": "",
+    "Servings": "",
+    "Time": "",
+    "Description": "",
+    "ingredients": [ {"List_item": ""}, {"List_item":""} ],
+    "instructions": [ {"List_item": ""} ],
+    "Note": "",
+    "Type": "Sides"
+  },
+
+  {
+    "Name": "Hot Chocolate",
+    "Author": "",
+    "Servings": "",
+    "Time": "",
+    "Description": "",
+    "ingredients": [ {"List_item": ""}, {"List_item":""} ],
+    "instructions": [ {"List_item": ""} ],
+    "Note": "",
+    "Type": "Uncategorized"
   }
 ]
