@@ -184,32 +184,40 @@ window.addEventListener("DOMContentLoaded", function () {
     allRecipeElems.push(recipeElemsCollection[i]);
   }
 
-  //this is for the header buttons for searching	
-	var Searchbuttons = document.getElementsByClassName("navlink");
-	Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrée"), document.querySelector(".active").classList.remove("active"), Searchbuttons[1].classList.add("active") });
-	Searchbuttons[2].addEventListener("click", function() { buttonSearch("Breakfast"), document.querySelector(".active").classList.remove("active"), Searchbuttons[2].classList.add("active") });
-	Searchbuttons[3].addEventListener("click", function() { buttonSearch("Side"), document.querySelector(".active").classList.remove("active"), Searchbuttons[3].classList.add("active") });
-	Searchbuttons[4].addEventListener("click", function() { buttonSearch("Dessert"), document.querySelector(".active").classList.remove("active"), Searchbuttons[4].classList.add("active") });
-	Searchbuttons[5].addEventListener("click", function() { buttonSearch("Uncategorized"), document.querySelector(".active").classList.remove("active"), Searchbuttons[5].classList.add("active") });
-	Searchbuttons[0].addEventListener("click", function() { buttonSearch("home"), document.querySelector(".active").classList.remove("active"), Searchbuttons[0].classList.add("active") });
+  if (document.getElementById('create-recipe-button')) { //this if statement is to make the buttons in the full recipe page not functionable and so it doesnt break things
+	//this is for the header buttons for searching	
+		var Searchbuttons = document.getElementsByClassName("navlink");
+		Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrée"), document.querySelector(".active").classList.remove("active"), Searchbuttons[1].classList.add("active") });
+		Searchbuttons[2].addEventListener("click", function() { buttonSearch("Breakfast"), document.querySelector(".active").classList.remove("active"), Searchbuttons[2].classList.add("active") });
+		Searchbuttons[3].addEventListener("click", function() { buttonSearch("Side"), document.querySelector(".active").classList.remove("active"), Searchbuttons[3].classList.add("active") });
+		Searchbuttons[4].addEventListener("click", function() { buttonSearch("Dessert"), document.querySelector(".active").classList.remove("active"), Searchbuttons[4].classList.add("active") });
+		Searchbuttons[5].addEventListener("click", function() { buttonSearch("Uncategorized"), document.querySelector(".active").classList.remove("active"), Searchbuttons[5].classList.add("active") });
+		Searchbuttons[0].addEventListener("click", function() { buttonSearch("home"), document.querySelector(".active").classList.remove("active"), Searchbuttons[0].classList.add("active") });
+
+		//this should make it so you can click on a recipe card to go to its full recipie some CSS needs to be changed but it will work
+		var recipiescardsbuttons = document.getElementsByClassName("recipe-card");
+			for (var i = 0; i < recipiescardsbuttons.length; i++) {
+				recipiescardsbuttons[i].setAttribute('href', window.location.host+'/recipe/'+i);
+			}
 
 
-	var createRecipeButton = document.getElementById('create-recipe-button');
-	createRecipeButton.addEventListener('click', showCreateRecipe);
+		var createRecipeButton = document.getElementById('create-recipe-button');
+		createRecipeButton.addEventListener('click', showCreateRecipe);
 	
-	var modalCloseButton = document.getElementsByClassName("modal-close-button");
-	modalCloseButton[0].addEventListener("click", closeCreateRecipe);
+		var modalCloseButton = document.getElementsByClassName("modal-close-button");
+		modalCloseButton[0].addEventListener("click", closeCreateRecipe);
 	
-	var modalCancelButton = document.getElementsByClassName("modal-cancel-button");
-	modalCancelButton[0].addEventListener("click", closeCreateRecipe);
+		var modalCancelButton = document.getElementsByClassName("modal-cancel-button");
+		modalCancelButton[0].addEventListener("click", closeCreateRecipe);
 	
-	var modalAcceptButton = document.getElementsByClassName("modal-accept-button");
-	modalAcceptButton[0].addEventListener("click", insertNewRecipe);
+		var modalAcceptButton = document.getElementsByClassName("modal-accept-button");
+		modalAcceptButton[0].addEventListener("click", insertNewRecipe);
 	
-	var searchButton = document.getElementById("navbar-search-button");
-	searchButton.addEventListener("click", recipeSearch);
+		var searchButton = document.getElementById("navbar-search-button");
+		searchButton.addEventListener("click", recipeSearch);
 	
-	var searchInput = document.getElementById("navbar-search-input");
-	searchInput.addEventListener("input", recipeSearch);
+		var searchInput = document.getElementById("navbar-search-input");
+		searchInput.addEventListener("input", recipeSearch);
+	}
 });
 
