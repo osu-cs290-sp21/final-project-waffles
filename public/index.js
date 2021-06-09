@@ -28,33 +28,75 @@ function clearRecipeInputValues() {		//works
 
 	  for (var i = 0; i < recipeInputElems.length; i++) {
 		var input = recipeInputElems[i].querySelector('input, textarea');
-		if (input)		//this checks to see if its not already null
-		input.value = '';
+		if (input)	{	//this checks to see if its not already null
+			input.value = '';
+		}
 	  }
 	console.log("test clear")
 }
 
-  function insertNewRecipe() {		//this works but it does not save for searching
+function GetIDtoADD(){
+
+	var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
+	return (recipiescardsbuttons.length +1)
+}
+
+function insertNewRecipe() {		//this works but it does not save for searching
 
   
-  var RecipeName = document.getElementById('recipe-name-input').value;
-  var RecipeAuthor = document.getElementById('recipe-author-input').value;
-  var RecipeDescription = document.getElementById('recipe-text-input').value;
-  var RecipeType = document.getElementById('recipe-category-input').value;
+  var RecipeName = document.getElementById('recipe-name-input').value.trim();
+  var RecipeAuthor = document.getElementById('recipe-author-input').value.trim();
+  var RecipeDescription = document.getElementById('recipe-text-input').value.trim();
+  var RecipeType = document.getElementById('recipe-category-input').value.trim();
+  var RecipeServings = document.getElementById('recipe-servings-input').value.trim();
+  var RecipeTime = document.getElementById('recipe-bake-input').value.trim();
+  var Recipeingredients = document.getElementById('recipe-ingredients-input').value.trim();
+  var Recipeinstructions = document.getElementById('recipe-instructions-input').value.trim();
+  var RecipeNote = document.getElementById('recipe-note-input').value.trim();
 
 
   if (RecipeName && RecipeAuthor && RecipeDescription && RecipeType) {	//isnt saved for searching
-    allRecipeElems.push({
+
+	var req = new XMLHttpRequest()
+    var reqUrl = '/addRecipe'
+    console.log("== reqUrl:", reqUrl)
+    req.open('POST', reqUrl)
+
+	var test = {
       Name: RecipeName,
       Author: RecipeAuthor,
       Description: RecipeDescription,
-	  Type: RecipeType
-    });
+	  Type: RecipeType,
+	  Servings: RecipeServings,
+	  Time: RecipeTime,
+	  ingredients: Recipeingredients,
+	  instructions: Recipeinstructions,
+	  Note: RecipeNote
+    }
+		allRecipeElems.push(test)
+    var reqBody = JSON.stringify(test)
 	
-    var Recipehtml = Handlebars.templates.RecipeCard( {Name: RecipeName, Author: RecipeAuthor, Description: RecipeDescription, Type: RecipeType} )     
-    var RecipeContainer = document.querySelector('main.recipes-container');
+	//console.log ("req body " + reqBody)
+	//console.log ("req name " + reqBody.Name)
+    //console.log("== typeof(reqBody):", typeof(reqBody))
 
-    RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+	req.setRequestHeader('Content-Type', 'application/json')
+
+    req.addEventListener('load', function (event) {
+      if (event.target.status === 200) {
+
+		var Recipehtml = Handlebars.templates.RecipeCard(test)  
+		
+		var RecipeContainer = document.querySelector('main.recipes-container');
+		RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+
+      } else {
+        alert("Failed to add photo to database; error:\n\n" + event.target.response)
+      }
+    })
+
+    req.send(reqBody)
+	
 
 	var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
 			for (var i = 0; i < recipiescardsbuttons.length; i++) {
@@ -69,6 +111,8 @@ function clearRecipeInputValues() {		//works
   closeCreateRecipe() 
 
   }
+
+
 
 function recipeSearch() {	//does not search, it works overall, but doesnt actually search through the recipies
 
@@ -123,7 +167,7 @@ function buttonSearch(Buttontype){	//this should trigger when the buttons in the
 
 	
 			var j =0
-  for (var i = 0; i < allRecipeElems.length; i++) {
+	for (var i = 0; i < allRecipeElems.length; i++) {
     if(allRecipeElems[i].Type == Buttontype || Buttontype == "home" ){
 			//console.log("test " + i)
 

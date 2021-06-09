@@ -3,10 +3,10 @@
   <div class = "recipe-type">{{Type}}</div>
   
       <p class = "recipe-name"> {{Name}} </p>
-      <p class = "recipe-author"> {{Author}} </p>
-      <p class = "recipe-servings"> {{Servings}} </p>
-      <p class = "recipe-time"> {{Time}} </p>
-      <p class = "recipe-description"> {{Description}} </p>
+      <p class = "recipe-author"> Author: {{Author}} </p>
+      <p class = "recipe-servings"> Number of Servings: {{Servings}} </p>
+      <p class = "recipe-time"> Bake Time: {{Time}} </p>
+      <p class = "recipe-description"> Description: {{Description}} </p>
       <div class = "recipe-content">
         <ul class = "recipe-ingredients">
           {{#each ingredients}}
@@ -18,7 +18,7 @@
             {{>list}}
           {{/each}}
         </ol>
-        <p class = "recipe-note"> {{Note}} </p>
+        <p class = "recipe-note"> Note: {{Note}} </p>
 
       </div>
     </article>

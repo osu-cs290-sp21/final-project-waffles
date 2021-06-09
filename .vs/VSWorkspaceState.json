@@ -7,6 +7,6 @@
     "\\views\\layouts",
     "\\views\\partials"
   ],
-  "SelectedNode": "\\views\\partials\\RecipeCard.handlebars",
+  "SelectedNode": "\\views\\partials\\newRecipe.handlebars",
   "PreviewInSolutionExplorer": false
 }
