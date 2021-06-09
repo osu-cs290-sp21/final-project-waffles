@@ -79,6 +79,8 @@ function recipeSearch() {	//does not search, it works overall, but doesnt actual
 	}
 	
 	//console.log ("test container" + allRecipeElems)
+
+	
 	
 	for (var i = 0; i < allRecipeElems.length; i++) {
     if(!searchQuery || allRecipeElems[i].Name.toLowerCase().indexOf(searchQuery) >=0 || allRecipeElems[i].Author.toLowerCase().indexOf(searchQuery)  >=0 ){
@@ -88,6 +90,12 @@ function recipeSearch() {	//does not search, it works overall, but doesnt actual
 			 var RecipeContainer = document.querySelector('main.recipes-container');
 
 			RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+
+			var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
+			var j =0
+				recipiescardsbuttons[j].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
+			j++
+			
 		}
 	}
 }
@@ -113,6 +121,12 @@ function buttonSearch(Buttontype){	//this should trigger when the buttons in the
 			 var RecipeContainer = document.querySelector('main.recipes-container');
 
 			RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+
+			
+			var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
+			var j =0
+				recipiescardsbuttons[j].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
+			j++
 		}
 	}
 }
