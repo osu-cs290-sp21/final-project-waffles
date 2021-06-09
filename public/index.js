@@ -34,74 +34,6 @@ function clearRecipeInputValues() {		//works
 	console.log("test clear")
 }
 
-function NewRecipeElems(name, author, servings, bakeTime, description, ingredients, instructions, notes) {	//unused
-	var recipeData = {
-    name: recipeName,
-    author: recipeAuthor,
-    servings: recipeServings,
-    bakeTime: recipeBakeTime,
-    description: recipeDescription,
-    ingredients: recipeIngredients,
-    instructions: recipeInstructions,
-    notes: recipeNotes
-	};
-	return recipeData;
-}
-
-/*
-function getrecipeId() { //idk about this one
-  var pathComponents = window.location.pathname.split('/');
-  if (pathComponents[0] !== '' && pathComponents[1] !== 'recipes') {
-    return null;
-  }
-	console.log ("test ID")
-	return pathComponents[2];
-}
-
-
-	///* [add function to make sure all recipe boxes are filled] //
-
-
-  function insertNewRecipe(recipeName, recipeAuthor) {
-
-	console.log ("test insert crazy thing")
-
-    var recipeName = document.getElementById('recipe-name-input').value || ''; //name
-    var recipeAuthor = document.getElementById('recipe-author-input').value || ''; //author
-  
-    if (recipeName && recipeAuthor) {
-      var recipeID= getrecipeId();
-      if (recipeID) {
-        console.log("== recipe ID:", recipeID);
-        storeRecipe(recipeID, recipeName, recipeAuthor, function (err) {
-          if (err) {
-            alert("Unable to save recipe. Got this error:\n\n" + err);
-          }
-          else {
-            var recipeTemplate = Handlebars.templates.RecipeCard;
-            var templateArgs = {
-              name: recipeName,
-              author: recipeAuthor
-          };
-          var recipeHTML = recipeTemplate(templateArgs);
-          var recipeContainer = document.querySelector('.recipe-container');
-          recipeContainer.insertAdjacentHTML('beforeend', recipeHTML);
-          }
-        });
-      }
-      closeCreateRecipe();
-    }
-    else {
-      alert('Please enter both "name" and "author"!');
-    }
-  var postBody = {
-    name: recipeName,
-    author: recipeAuthor
-    };
-  postRequest.send(JSON.stringify(postBody));		//postRequest not defined
-  }
-  */
-
   function insertNewRecipe() {		//this works but it does not save for searching
 
   
@@ -134,7 +66,7 @@ function recipeSearch() {	//does not search, it works overall, but doesnt actual
 	console.log ("test Search")
 
 	var searchQuery = document.getElementById("navbar-search-input").value;
-	searchQuery = searchQuery ? searchQuery.trim().toLowerCase : '';
+	searchQuery = searchQuery.trim().toLowerCase();
 
 	var recipeContainer = document.querySelector(".recipes-container");
 	
@@ -148,11 +80,16 @@ function recipeSearch() {	//does not search, it works overall, but doesnt actual
 	
 	//console.log ("test container" + allRecipeElems)
 	
-	allRecipeElems.forEach(function (recipeElem) {
-		if (!searchQuery || recipeElem.textContent.toLowerCase().indexOf(searchQuery) !== -1) {
-			recipeContainer.appendChild(recipeElem);
+	for (var i = 0; i < allRecipeElems.length; i++) {
+    if(!searchQuery || allRecipeElems[i].Name.toLowerCase().indexOf(searchQuery) >=0 || allRecipeElems[i].Author.toLowerCase().indexOf(searchQuery)  >=0 ){
+			//console.log("test " + i)
+
+			 var Recipehtml = Handlebars.templates.RecipeCard( {Name: allRecipeElems[i].Name, Author: allRecipeElems[i].Author, Description: allRecipeElems[i].Description, Type: allRecipeElems[i].Type} )     
+			 var RecipeContainer = document.querySelector('main.recipes-container');
+
+			RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
 		}
-	});
+	}
 }
 
 function buttonSearch(Buttontype){	//this should trigger when the buttons in the header are pressed, but will need the searching system worked out
@@ -167,21 +104,55 @@ function buttonSearch(Buttontype){	//this should trigger when the buttons in the
 		}
 	}
 
-	allRecipeElems.forEach(function (recipeElem) {
-		if (recipeElem.Type == Buttontype || Buttontype == "home" ) {
-			recipeContainer.appendChild(recipeElem);
-		}
-	});
+	
+  for (var i = 0; i < allRecipeElems.length; i++) {
+    if(allRecipeElems[i].Type == Buttontype || Buttontype == "home" ){
+			//console.log("test " + i)
 
+			 var Recipehtml = Handlebars.templates.RecipeCard( {Name: allRecipeElems[i].Name, Author: allRecipeElems[i].Author, Description: allRecipeElems[i].Description, Type: allRecipeElems[i].Type} )     
+			 var RecipeContainer = document.querySelector('main.recipes-container');
+
+			RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+		}
+	}
 }
 
 
+function parseRecipieElem(RecipeElem) {
+  var Recipe = {};
+
+  var RecipeTextElem = RecipeElem.querySelector('.recipe-name');
+  Recipe.Name = RecipeTextElem.textContent.trim();
+
+  var RecipeAuthorLinkElem = RecipeElem.querySelector('.recipe-author');
+  Recipe.Author = RecipeAuthorLinkElem.textContent.trim();
+
+  var RecipeAuthorLinkElem = RecipeElem.querySelector('.recipe-description');
+  Recipe.Description = RecipeAuthorLinkElem.textContent.trim();
+
+  var RecipeAuthorLinkElem = RecipeElem.querySelector('.recipe-type');
+  Recipe.Type = RecipeAuthorLinkElem.textContent.trim();
+  
+  //console.log("Name " + Recipe.Name)
+  //console.log("Author " + Recipe.Author)
+  //console.log("Description " + Recipe.Description)
+  //console.log("Type " + Recipe.Type)
+  //console.log("")
+
+  return Recipe;
+}
 
 window.addEventListener("DOMContentLoaded", function () {	
 
   var recipeElemsCollection = document.getElementsByClassName('recipe-card');
   for (var i = 0; i < recipeElemsCollection.length; i++) {
-    allRecipeElems.push(recipeElemsCollection[i]);
+    allRecipeElems.push(parseRecipieElem(recipeElemsCollection[i]));
+
+  //console.log("Name " + allRecipeElems[i].Name)
+  //console.log("Author " + allRecipeElems[i].Author)
+  //console.log("Description " + allRecipeElems[i].Description)
+  //console.log("Type " + allRecipeElems[i].Type)
+  //console.log("")
   }
 
   if (document.getElementById('create-recipe-button')) { //this if statement is to make the buttons in the full recipe page not functionable and so it doesnt break things
@@ -198,8 +169,6 @@ window.addEventListener("DOMContentLoaded", function () {
 		var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
 			for (var i = 0; i < recipiescardsbuttons.length; i++) {
 				recipiescardsbuttons[i].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
-
-				//recipiescardsbuttons[i].addEventListener("click", function() {window.location.replace('http://' + window.location.host+'/recipe/'+i)} )
 			}
 
 
