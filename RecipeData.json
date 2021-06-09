@@ -1,7 +1,7 @@
 [
   {
     "Name": "Pesto Genovese",
-    "Author": "Notafine",
+    "Author": "author: Notafine",
     "Servings": "| 1 Serving |",
     "Time": "| 1 minute |",
     "Description": "Make simple, delicious pesto in the time it takes your pasta to cook.",
@@ -13,7 +13,7 @@
 
   { 
     "Name": "Waffles the 1st",
-    "Author": "OneShyOfABunch",
+    "Author": "author: OneShyOfABunch",
     "Servings": "| 6 Servings |",
     "Time": "| 20 minutes |",
     "Description": "easy and quick Fluffy waffles ",
@@ -25,7 +25,7 @@
   
   {
     "Name": "Grilled Corn on the Cob",
-    "Author": "SUETEITSMA",
+    "Author": "author: SUETEITSMA",
     "Servings": "| 6 Servings |",
     "Time": "| 40 minutes |",
     "Description": "This is an easy method for grilling corn on the cob. The corn will be very tasty and tender.",
@@ -37,7 +37,7 @@
   
   {
     "Name": " Custard-Style (French) Ice Cream",
-    "Author": "Nota",
+    "Author": "author: Nota Ciabatta",
     "Servings": "| 23 Servings |",
     "Time": "| 2 hours, 11 seconds |",
     "Description": "Make simple, delicious pesto in the time it takes your pasta to cook.",
@@ -49,7 +49,7 @@
 
   {
     "Name": "Famous Brownies",
-    "Author": "Fredrick George III",
+    "Author": "author: Fredrick George III",
     "Servings": "| 16 Servings |",
     "Time": "| 45 minutes |",
     "Desciprtion": "Our famous brownie dessert will send you to an entire other plain of existence, eat them.",
@@ -65,7 +65,7 @@
 
   {
     "Name": "Chicken Scampi",
-    "Author": "kevin.",
+    "Author": "author: kevin.",
     "Servings": "| 1 Serving |",
     "Time": "| 1 hour |",
     "Description": "Easy to make, butter, succulent chicken pasta",
@@ -83,7 +83,7 @@
 
   {
     "Name": "Cream Cheese Stuffed French Toast",
-    "Author": "Anonymous",
+    "Author": "author: Anonymous",
     "Servings": "| 4 Servings |",
     "Time": "| 25 minutes |",
     "Description": "Super yummy french toast with an unconventional twist",
@@ -98,7 +98,7 @@
 
   {
     "Name": "Cornbread",
-    "Author": "Connie Kornbred",
+    "Author": "author: Connie Kornbred",
     "Servings": "| 12 Servings |",
     "Time": "| 30 minutes |",
     "Description": "Fluffy cornbread!",
@@ -114,7 +114,7 @@
 
   {
     "Name": "Gamer juice",
-    "Author": "hannah ghim",
+    "Author": "author: me",
     "Servings": "| 4 Servings |",
     "Time": "| 30 seconds |",
     "Description": "",
@@ -126,7 +126,7 @@
 
   {
     "Name": "Lasagna",
-    "Author": "Steven David",
+    "Author": "author: Steven David",
     "Servings": "| 12 Servings |",
     "Time": "| 2 hours, 30 minutes |",
     "Description": "The best lasagna you'll ever eat",
@@ -148,7 +148,7 @@
 
   {
     "Name": "egg",
-    "Author": "tofu-Chan",
+    "Author": "author: tofu-Chan",
     "Servings": "| 1 Serving |",
     "Time": "| 5 minutes |",
     "Description": "egg.",
@@ -162,7 +162,7 @@
 
   {
     "Name": "Mashed Potatoes",
-    "Author": "Old man Jenkins",
+    "Author": "author: Old man Jenkins",
     "Servings": "| 4 Servings |",
     "Time": "| 35 minutes |",
     "Description": "basic potato mash",
@@ -176,7 +176,7 @@
 
   {
     "Name": "Hot Chocolate",
-    "Author": "Mama Mary",
+    "Author": "author: Mama Mary",
     "Servings": "| 4 Servings |",
     "Time": "| 6 minutes |",
     "Description": "creamy hot choccy",
@@ -191,7 +191,7 @@
 
   {
     "Name": "Belgiun waffles",
-    "Author": "Nicole",
+    "Author": "author: Nicole",
     "Servings": "| 8 Servings |",
     "Time": "| 35 minutes |",
     "Description": "Golden brown Belgiun style waffles",
@@ -207,10 +207,10 @@
 
   {
     "Name": "Hong Kong-Style Egg Waffle",
-    "Author": "Alvin",
+    "Author": "author: Alvin",
     "Servings": "| 3 Servings |",
     "Time": "| 1 hour, 15 minutes |",
-    "Description": "ALso known as Bubble Waffle",
+    "Description": "Also known as Bubble Waffle",
     "ingredients": [ {"List_item": "1 cup all purpose flour, plus 2 tbsp"}, {"List_item":"2 teaspoons baking powder"}, {"List_item": "1 tablespoon custard powder"}, {"List_item": "3 tablespoons tapioca starch, plus 1 1/2 teaspoons"},
       {"List_item": "2 large eggs"}, {"List_item": "1/2 cup sugar, plsu 3 tablespoons"}, {"List_item": "1/2 cup water, plus 2 tablespoons"}, {"List_item": "1 tablespoon evaporated milk, plus 2.25 teaspoons"}, {"List_item": "1 teaspoon vanilla extract"},
       {"List_item": "2 tablespoons vegetable oil"}, {"List_item": "oil, for greasing waffle machine"} ],
@@ -225,7 +225,7 @@
 
   {
     "Name": "Brussels' Waffle",
-    "Author": "Gary",
+    "Author": "author: Gary",
     "Servings": "| 2 Servings |",
     "Time": "| 1 hour, 15 miunutes |",
     "Description": "Waffle from Brussels",
