@@ -57,11 +57,15 @@ a {
 	line-height: 38px;
 }
 #navbar-search-input {
-	padding: 4px;
+  padding: 4px;
   font-size: 16px;
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  padding-top: 13px;
+  max-height: 20px;
   background-color: #eee;
   border: 1px solid #dadada;
   border-radius: 5px;
+  outline: none;
 }
 #navbar-search-button {
   margin-left: -5px;
@@ -90,6 +94,10 @@ a {
 	padding: 10px;
 	margin: 2px;
 }
+.recipe-link {
+	color: #000;
+	text-decoration: none;
+}
 .recipe-name {
 	margin-left: 10px;
 	text-align: center;
@@ -114,6 +122,8 @@ a {
   font-size: 60px;
   color: #fff;
   cursor: pointer;
+
+  background-color: rgba(255,255,255,0);
 }
 i {
 	padding: 0px 3px;
@@ -127,16 +137,157 @@ i {
 	grid: auto / 50% 50%;
 }
 
-/* Add Recipe */
-#create-recipe-modal {
-	background-color: #fff;
-	border: 3px solid #000;
-	width: 75vw;
+/* Modal */
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
 }
-
+#create-recipe-modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1010;
+	overflow: scroll;
+}
 
 .hidden {
   display: none;
+}
+
+.modal-dialog {
+	width: auto;
+	max-width: 600px;
+	min-width: 350px;
+	min-height: 300px;
+	margin: 40px auto;
+	background-color: #fff;
+	border-radius: 15px;
+}
+.modal-header {
+	background-color: #9cacbf;
+	position: relative;
+	padding: 10px 20px 0px 20px;
+	height: 50px;
+}
+.modal-header h3 {
+	text-align: center;
+	color: #eee;
+	margin: 0;
+	font-size: 25px;
+}
+.modal-close-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 24px;
+	border: none;
+	background: none;
+	color: #eee;
+	padding: 0;
+	cursor: pointer;
+}
+.modal-body {
+	padding: 20px;
+}
+
+/* Inputs */
+.recipe-input-element label {
+	font-weight: 600;
+	flex: 1 75px;
+	margin-right: 10px;
+  }
+.recipe-input-element input,
+.recipe-input-element select,
+.recipe-input-element textarea {
+	flex: 6 200px;
+	padding: 8px;
+	margin: 5px;
+	font-size: 17px;
+	border: 1px solid #aaa;
+	outline: none;
+	font-family: 'Baloo Tammudu 2', sans-serif;
+}
+.recipe-input-element input {
+	height: 18px;
+	padding-top: 20px;
+}
+.recipe-input-element select {
+	height: 50px;
+	padding-left: 5px;
+}
+.recipe-input-element {
+	display:grid;
+	grid: auto / 33% 66%;
+}
+.recipe-input-element textarea {
+	min-height: 64px;
+}
+  
+
+/* Footer */
+.modal-footer {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 10px 20px 10px;
+	margin-right: -20px;
+}
+.modal-footer button {
+	font-size: 18px;
+	font-family: 'Baloo Tammudu 2', sans-serif;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 10px 10px 0 10px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.modal-footer .modal-cancel-button:hover {
+	background-color: #eee;
+}
+  
+.modal-footer .modal-accept-button {
+	background-color: #9cacbf;
+	color: #fff;
+}
+  
+.modal-footer .modal-accept-button:hover {
+	background-color: #8fa0b5;
+}
+
+
+.recipe-full {
+	background: #ffffff;
+	border: 2px solid #e3e3e3;
+	padding: 20px 30px;
+}
+
+
+
+.error-container {
+	/* margin-top: 50px; */
+	text-align: center;
+	background: #e6e6ed;
+	height: 70vh;
+}
+  
+.error-container h2 {
+	margin: 10px 0;
+	font-size: 96px;
+	font-weight: 100;
+}
+  
+.error-container h3 {
+	margin: 10px 0;
+	font-size: 36px;
+	font-weight: 400;
 }
 
 /* Fixing Gradient for some specs */
