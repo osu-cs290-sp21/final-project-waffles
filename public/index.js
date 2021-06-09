@@ -225,7 +225,7 @@ window.addEventListener("DOMContentLoaded", function () {
   if (document.getElementById('create-recipe-button')) { //this if statement is to make the buttons in the full recipe page not functionable and so it doesnt break things
 	//this is for the header buttons for searching	
 		var Searchbuttons = document.getElementsByClassName("navlink");
-		Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrées"), document.querySelector(".active").classList.remove("active"), Searchbuttons[1].classList.add("active") });
+		Searchbuttons[1].addEventListener("click", function() { buttonSearch("Entrees"), document.querySelector(".active").classList.remove("active"), Searchbuttons[1].classList.add("active") });
 		Searchbuttons[2].addEventListener("click", function() { buttonSearch("Breakfasts"), document.querySelector(".active").classList.remove("active"), Searchbuttons[2].classList.add("active") });
 		Searchbuttons[3].addEventListener("click", function() { buttonSearch("Sides"), document.querySelector(".active").classList.remove("active"), Searchbuttons[3].classList.add("active") });
 		Searchbuttons[4].addEventListener("click", function() { buttonSearch("Desserts"), document.querySelector(".active").classList.remove("active"), Searchbuttons[4].classList.add("active") });

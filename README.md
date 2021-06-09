@@ -7,11 +7,10 @@ Our Implementation: A simple recipe website that allows users to add and delete 
 Dependencies: node.js, express
 
 ## Planned and Possible Features
-Adding recipes
 Removing recipes
-Searching recipes
-Multiple categories for recipes to be assigned.
-Compatibility with local server.
 
 ## Implemented Features
-None yet!
+Adding recipes (locally)
+Searching recipes
+Multiple categories for recipes to be assigned.
+Compatibility with local server (somewhat).

@@ -8,7 +8,7 @@
     "ingredients": [ {"List_item": "1 box bell/campanelle pasta"}, {"List_item":"1/4 cup pine nuts"}, {"List_item":"1 garlic clove"}, {"List_item":"Red pepper flakes"}, {"List_item":"1 container of basil"}, {"List_item":"Parmigiano-Reggiano cheese, grated"}, {"List_item":"Olive oil"}, {"List_item":"3-5 green beans"}, {"List_item":"2 fingerling potatoes, sliced into 1/4-inch rounds"} ],
     "instructions": [ {"List_item": "Drop the pasta into salted, boiling water and cook until al dente."}, {"List_item":"In the food processor, combine the nuts, garlic and red pepper; pulse until smooth. Add the basil and 1/4 cup of grated cheese and blend again. Begin adding olive oil until a smooth pesto forms that's not overly oily. (If it gets too oily, add more cheese.)"}, {"List_item":"When the pasta has 1 minute left to cook, add the green beans and potatoes to the pasta water and cook for 1 minute. Fill a coffee mug halfway with pasta water; set aside."}, {"List_item":"Drain the pasta and veggies in a colander, then return them to the pot. Add a little olive oil, and stir to incorporate. Add the pesto and stir, making sure all the noodles are coated. Pour in some pasta water from the mug, if needed, to create a creamy texture."} ],
     "Note": "No note, please leave note section blank",
-    "Type": "Entrées"
+    "Type": "Entrees"
   },
 
   { 
@@ -78,7 +78,7 @@
       {"List_item": "Cook pasta until al dente and reserve 1 cup of pasta water"}, {"List_item": "Add pasta water to skillet along with chicken, lemon zest and juice and remaining butter"}, 
       {"List_item": "Stir at medium-low heat until butter is melted in"}, {"List_item": "Removed from heat, sprinkle grated cheeseand parsely on top"}, {"List_item": "YUM"} ],
     "Note": "a little spicy. [ reference: https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-scampi-pasta-5588113 ]",
-    "Type": "Entrées"
+    "Type": "Entrees"
   },
 
   {
@@ -143,7 +143,7 @@
       {"List_item": "Repeat layers, and top with remaining mozzarella and parmesan cheese"}, {"List_item": "COver with foil"}, {"List_item": "bake in oven for 25 minutes"},
       {"List_item": "Remove foil and bake another 25 minutes"},{"List_item": " Let cool for 15 minutes before enjoying"} ],
     "Note": "[ reference: https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/ ]",
-    "Type": "Entrées"
+    "Type": "Entrees"
   },
 
   {
