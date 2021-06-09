@@ -40,22 +40,31 @@ function clearRecipeInputValues() {		//works
   var RecipeName = document.getElementById('recipe-name-input').value;
   var RecipeAuthor = document.getElementById('recipe-author-input').value;
   var RecipeDescription = document.getElementById('recipe-text-input').value;
+  var RecipeType = document.getElementById('recipe-category-input').value;
 
 
-  if (RecipeName && RecipeAuthor && RecipeDescription) {	//isnt saved for searching
+  if (RecipeName && RecipeAuthor && RecipeDescription && RecipeType) {	//isnt saved for searching
     allRecipeElems.push({
       Name: RecipeName,
       Author: RecipeAuthor,
-      Description: RecipeDescription
+      Description: RecipeDescription,
+	  Type: RecipeType
     });
 	
-    var Recipehtml = Handlebars.templates.RecipeCard( {Name: RecipeName, Author: RecipeAuthor, Description: RecipeDescription} )     
+    var Recipehtml = Handlebars.templates.RecipeCard( {Name: RecipeName, Author: RecipeAuthor, Description: RecipeDescription, Type: RecipeType} )     
     var RecipeContainer = document.querySelector('main.recipes-container');
 
     RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
+
+	var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
+			for (var i = 0; i < recipiescardsbuttons.length; i++) {
+				recipiescardsbuttons[i].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
+			}
+
   } else {
     alert('You must fill in all text boxes! (besides note, that is optional)');
   }
+
 
   closeCreateRecipe() 
 
@@ -82,6 +91,7 @@ function recipeSearch() {	//does not search, it works overall, but doesnt actual
 
 	
 	
+			var j =0
 	for (var i = 0; i < allRecipeElems.length; i++) {
     if(!searchQuery || allRecipeElems[i].Name.toLowerCase().indexOf(searchQuery) >=0 || allRecipeElems[i].Author.toLowerCase().indexOf(searchQuery)  >=0 ){
 			//console.log("test " + i)
@@ -92,7 +102,6 @@ function recipeSearch() {	//does not search, it works overall, but doesnt actual
 			RecipeContainer.insertAdjacentHTML('beforeend', Recipehtml)
 
 			var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
-			var j =0
 				recipiescardsbuttons[j].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
 			j++
 			
@@ -113,6 +122,7 @@ function buttonSearch(Buttontype){	//this should trigger when the buttons in the
 	}
 
 	
+			var j =0
   for (var i = 0; i < allRecipeElems.length; i++) {
     if(allRecipeElems[i].Type == Buttontype || Buttontype == "home" ){
 			//console.log("test " + i)
@@ -124,7 +134,6 @@ function buttonSearch(Buttontype){	//this should trigger when the buttons in the
 
 			
 			var recipiescardsbuttons = document.getElementsByClassName("recipe-link");
-			var j =0
 				recipiescardsbuttons[j].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
 			j++
 		}
@@ -184,6 +193,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			for (var i = 0; i < recipiescardsbuttons.length; i++) {
 				recipiescardsbuttons[i].setAttribute('href', 'http://' + window.location.host+'/recipe/'+i);
 			}
+			console.log(recipiescardsbuttons.length)
 
 
 		var createRecipeButton = document.getElementById('create-recipe-button');
