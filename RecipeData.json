@@ -1,240 +1,908 @@
 [
   {
     "Name": "Pesto Genovese",
-    "Author": "author: Notafine",
-    "Servings": "| 1 Serving |",
-    "Time": "| 1 minute |",
+    "Author": "Notafine",
+    "Servings": "1",
+    "Time": " 1 minute ",
     "Description": "Make simple, delicious pesto in the time it takes your pasta to cook.",
-    "ingredients": [ {"List_item": "1 box bell/campanelle pasta"}, {"List_item":"1/4 cup pine nuts"}, {"List_item":"1 garlic clove"}, {"List_item":"Red pepper flakes"}, {"List_item":"1 container of basil"}, {"List_item":"Parmigiano-Reggiano cheese, grated"}, {"List_item":"Olive oil"}, {"List_item":"3-5 green beans"}, {"List_item":"2 fingerling potatoes, sliced into 1/4-inch rounds"} ],
-    "instructions": [ {"List_item": "Drop the pasta into salted, boiling water and cook until al dente."}, {"List_item":"In the food processor, combine the nuts, garlic and red pepper; pulse until smooth. Add the basil and 1/4 cup of grated cheese and blend again. Begin adding olive oil until a smooth pesto forms that's not overly oily. (If it gets too oily, add more cheese.)"}, {"List_item":"When the pasta has 1 minute left to cook, add the green beans and potatoes to the pasta water and cook for 1 minute. Fill a coffee mug halfway with pasta water; set aside."}, {"List_item":"Drain the pasta and veggies in a colander, then return them to the pot. Add a little olive oil, and stir to incorporate. Add the pesto and stir, making sure all the noodles are coated. Pour in some pasta water from the mug, if needed, to create a creamy texture."} ],
+    "ingredients": [
+      {
+        "List_item": "1 box bell/campanelle pasta"
+      },
+      {
+        "List_item": "1/4 cup pine nuts"
+      },
+      {
+        "List_item": "1 garlic clove"
+      },
+      {
+        "List_item": "Red pepper flakes"
+      },
+      {
+        "List_item": "1 container of basil"
+      },
+      {
+        "List_item": "Parmigiano-Reggiano cheese, grated"
+      },
+      {
+        "List_item": "Olive oil"
+      },
+      {
+        "List_item": "3-5 green beans"
+      },
+      {
+        "List_item": "2 fingerling potatoes, sliced into 1/4-inch rounds"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Drop the pasta into salted, boiling water and cook until al dente."
+      },
+      {
+        "List_item": "In the food processor, combine the nuts, garlic and red pepper; pulse until smooth. Add the basil and 1/4 cup of grated cheese and blend again. Begin adding olive oil until a smooth pesto forms that's not overly oily. (If it gets too oily, add more cheese.)"
+      },
+      {
+        "List_item": "When the pasta has 1 minute left to cook, add the green beans and potatoes to the pasta water and cook for 1 minute. Fill a coffee mug halfway with pasta water; set aside."
+      },
+      {
+        "List_item": "Drain the pasta and veggies in a colander, then return them to the pot. Add a little olive oil, and stir to incorporate. Add the pesto and stir, making sure all the noodles are coated. Pour in some pasta water from the mug, if needed, to create a creamy texture."
+      }
+    ],
     "Note": "No note, please leave note section blank",
     "Type": "Entrees"
   },
-
-  { 
+  {
     "Name": "Waffles the 1st",
-    "Author": "author: OneShyOfABunch",
-    "Servings": "| 6 Servings |",
-    "Time": "| 20 minutes |",
+    "Author": "OneShyOfABunch",
+    "Servings": "6",
+    "Time": "20 minutes",
     "Description": "easy and quick Fluffy waffles ",
-    "ingredients": [ {"List_item": "2 eggs"}, {"List_item":"2 cups all-purpose flour"}, {"List_item":"1 & 3/4 cups milk"}, {"List_item":"1/2 cup vegetable oil"}, {"List_item":"1 tablespoon white sugar"}, {"List_item":"4 teaspoons baking powder"}, {"List_item":"1/4 teaspoon salt"}, {"List_item":"1/2 teaspoon vanilla extract"} ],
-    "instructions": [ {"List_item": "Preheat waffle iron. Beat eggs in large bowl with hand beater until fluffy. Beat in flour, milk, vegetable oil, sugar, baking powder, salt and vanilla, just until smooth."}, {"List_item":"Spray preheated waffle iron with non-stick cooking spray. Pour mix onto hot waffle iron. Cook until golden brown. Serve hot."} ],
+    "ingredients": [
+      {
+        "List_item": "2 eggs"
+      },
+      {
+        "List_item": "2 cups all-purpose flour"
+      },
+      {
+        "List_item": "1 & 3/4 cups milk"
+      },
+      {
+        "List_item": "1/2 cup vegetable oil"
+      },
+      {
+        "List_item": "1 tablespoon white sugar"
+      },
+      {
+        "List_item": "4 teaspoons baking powder"
+      },
+      {
+        "List_item": "1/4 teaspoon salt"
+      },
+      {
+        "List_item": "1/2 teaspoon vanilla extract"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Preheat waffle iron. Beat eggs in large bowl with hand beater until fluffy. Beat in flour, milk, vegetable oil, sugar, baking powder, salt and vanilla, just until smooth."
+      },
+      {
+        "List_item": "Spray preheated waffle iron with non-stick cooking spray. Pour mix onto hot waffle iron. Cook until golden brown. Serve hot."
+      }
+    ],
     "Note": "[ reference: https://www.allrecipes.com/recipe/22180/waffles-i/ ]",
     "Type": "Breakfasts"
-  }, 
-  
+  },
   {
     "Name": "Grilled Corn on the Cob",
-    "Author": "author: SUETEITSMA",
-    "Servings": "| 6 Servings |",
-    "Time": "| 40 minutes |",
+    "Author": "SUETEITSMA",
+    "Servings": "6",
+    "Time": "40 minutes",
     "Description": "This is an easy method for grilling corn on the cob. The corn will be very tasty and tender.",
-    "ingredients": [ {"List_item": "6 ears corn"}, {"List_item":"6 tablespoons butter, softened"}, {"List_item":"salt and pepper to taste"} ],
-    "instructions": [ {"List_item": "Preheat an outdoor grill for high heat and lightly oil grate."}, {"List_item":"Peel back corn husks and remove silk. Place 1 tablespoon butter, salt and pepper on each piece of corn. Close husks."}, {"List_item":"Wrap each ear of corn tightly in aluminum foil. Place on the prepared grill. Cook approximately 30 minutes, turning occasionally, until corn is tender."} ],
+    "ingredients": [
+      {
+        "List_item": "6 ears corn"
+      },
+      {
+        "List_item": "6 tablespoons butter, softened"
+      },
+      {
+        "List_item": "salt and pepper to taste"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Preheat an outdoor grill for high heat and lightly oil grate."
+      },
+      {
+        "List_item": "Peel back corn husks and remove silk. Place 1 tablespoon butter, salt and pepper on each piece of corn. Close husks."
+      },
+      {
+        "List_item": "Wrap each ear of corn tightly in aluminum foil. Place on the prepared grill. Cook approximately 30 minutes, turning occasionally, until corn is tender."
+      }
+    ],
     "Note": "Requires outdoor grill. [ reference: https://www.foodnetwork.com/recipes/bobby-flay/perfectly-grilled-corn-on-the-cob-recipe-1956289 ]",
     "Type": "Sides"
-  },  
-  
+  },
   {
     "Name": " Custard-Style (French) Ice Cream",
-    "Author": "author: Nota Ciabatta",
-    "Servings": "| 23 Servings |",
-    "Time": "| 2 hours, 11 seconds |",
+    "Author": "Nota Ciabatta",
+    "Servings": "23",
+    "Time": "2 hours, 11 seconds",
     "Description": "Make simple, delicious pesto in the time it takes your pasta to cook.",
-    "ingredients": [ {"List_item": "8 egg yolks"}, {"List_item":"1 cup granulated sugar, divided"}, {"List_item":"1 cup heavy cream"}, {"List_item":"3 cups half-and-half"}, {"List_item":"Pinch salt"}, {"List_item":"1 tablespoon vanilla extract"} ],
-    "instructions": [ {"List_item": "In a medium bowl, whisk together the egg yolks and half of the sugar. Set aside."}, {"List_item":"In a medium saucepan, stir together the cream, half-and-half, salt, and remaining sugar. Heat the mixture over medium-high heat, stirring often, until it comes to a simmer, then reduce heat to medium."}, {"List_item":"Add about 1/2 cup of the cream mixture to the egg mixture while whisking constantly (this helps prevent the eggs from cooking). Repeat with another 1/2 cup of the cream mixture."}, {"List_item":"Using a heatproof spatula, stir the cream mixture in the saucepan constantly as you pour the egg mixture into the pan."}, {"List_item":"Cook, stirring constantly, until thickened and mixture coats the back of the spatula, 1 to 2 minutes longer. Remove from heat."}, {"List_item":"Strain the mixture through a fine-mesh sieve into a clean bowl and whisk in the vanilla extract. Set the bowl in an ice bath and stir the base occasionally until it's cooled to room temperature. Remove the bowl from the ice bath, cover with plastic wrap, and refrigerate at least 2 to 4 hours or overnight before churning, either in an ice cream machine or by hand (see below for tips on how to churn ice cream)."} ],
+    "ingredients": [
+      {
+        "List_item": "8 egg yolks"
+      },
+      {
+        "List_item": "1 cup granulated sugar, divided"
+      },
+      {
+        "List_item": "1 cup heavy cream"
+      },
+      {
+        "List_item": "3 cups half-and-half"
+      },
+      {
+        "List_item": "Pinch salt"
+      },
+      {
+        "List_item": "1 tablespoon vanilla extract"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "In a medium bowl, whisk together the egg yolks and half of the sugar. Set aside."
+      },
+      {
+        "List_item": "In a medium saucepan, stir together the cream, half-and-half, salt, and remaining sugar. Heat the mixture over medium-high heat, stirring often, until it comes to a simmer, then reduce heat to medium."
+      },
+      {
+        "List_item": "Add about 1/2 cup of the cream mixture to the egg mixture while whisking constantly (this helps prevent the eggs from cooking). Repeat with another 1/2 cup of the cream mixture."
+      },
+      {
+        "List_item": "Using a heatproof spatula, stir the cream mixture in the saucepan constantly as you pour the egg mixture into the pan."
+      },
+      {
+        "List_item": "Cook, stirring constantly, until thickened and mixture coats the back of the spatula, 1 to 2 minutes longer. Remove from heat."
+      },
+      {
+        "List_item": "Strain the mixture through a fine-mesh sieve into a clean bowl and whisk in the vanilla extract. Set the bowl in an ice bath and stir the base occasionally until it's cooled to room temperature. Remove the bowl from the ice bath, cover with plastic wrap, and refrigerate at least 2 to 4 hours or overnight before churning, either in an ice cream machine or by hand (see below for tips on how to churn ice cream)."
+      }
+    ],
     "Note": "This requires a lot of tools that are not listed. [ reference: https://www.foodandwine.com/recipes/french-style-ice-cream ]",
     "Type": "Desserts"
   },
-
   {
     "Name": "Famous Brownies",
-    "Author": "author: Fredrick George III",
-    "Servings": "| 16 Servings |",
-    "Time": "| 45 minutes |",
+    "Author": "Fredrick George III",
+    "Servings": "16",
+    "Time": "45 minutes",
     "Desciprtion": "Our famous brownie dessert will send you to an entire other plain of existence, eat them.",
-    "ingredients": [ {"List_item": "3 tablespoons butter(softened)"}, {"List_item":"3 tablespoons cocoa powder"},
-       {"List_item": "1 tablespoon honey"}, {"List_item": "1 teaspoon vanilla extract"}, {"List_item": "1 cup confectioners' sugar"} ],
-    "instructions": [ {"List_item": "Preheat oven to 350 degrees F"}, {"List_item": "Grease and flour an 8 inch pan"},{"List_item": "Melt 1/2 cup butter in large saucepan"},
-    {"List_item": "Remove butter from heat , stir in sugar, eggs, and vanilla"}, {"List_item": "Beat 1/3 cup cocoa, 1/2 cup flour, a pinch of salt, and baking powder"},
-    {"List_item": "Spread in pan"}, {"List_item": "Bake in oven for 25 to 30 minutes"}, {"List_item": "FROSTING - Combine 3 tablespoons of butter (softened), 3 tablespoons of cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar"},
-    {"List_item": "Stir until smooth, then frost brownies while they are still warm"}, {"List_item": "Enjoy!"}],
+    "ingredients": [
+      {
+        "List_item": "3 tablespoons butter(softened)"
+      },
+      {
+        "List_item": "3 tablespoons cocoa powder"
+      },
+      {
+        "List_item": "1 tablespoon honey"
+      },
+      {
+        "List_item": "1 teaspoon vanilla extract"
+      },
+      {
+        "List_item": "1 cup confectioners' sugar"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Preheat oven to 350 degrees F"
+      },
+      {
+        "List_item": "Grease and flour an 8 inch pan"
+      },
+      {
+        "List_item": "Melt 1/2 cup butter in large saucepan"
+      },
+      {
+        "List_item": "Remove butter from heat , stir in sugar, eggs, and vanilla"
+      },
+      {
+        "List_item": "Beat 1/3 cup cocoa, 1/2 cup flour, a pinch of salt, and baking powder"
+      },
+      {
+        "List_item": "Spread in pan"
+      },
+      {
+        "List_item": "Bake in oven for 25 to 30 minutes"
+      },
+      {
+        "List_item": "FROSTING - Combine 3 tablespoons of butter (softened), 3 tablespoons of cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar"
+      },
+      {
+        "List_item": "Stir until smooth, then frost brownies while they are still warm"
+      },
+      {
+        "List_item": "Enjoy!"
+      }
+    ],
     "Note": "You might gain weight because you will want to eat the whole pan of brownies. [ reference: https://www.allrecipes.com/recipe/10549/best-brownies/ ]",
     "Type": "Desserts"
   },
-
   {
     "Name": "Chicken Scampi",
-    "Author": "author: kevin.",
-    "Servings": "| 1 Serving |",
-    "Time": "| 1 hour |",
+    "Author": "kevin.",
+    "Servings": "1",
+    "Time": "1 hour",
     "Description": "Easy to make, butter, succulent chicken pasta",
-    "ingredients": [ {"List_item": "Kosher salt"}, {"List_item":"1 pound thinly-sliced chicken cutlets"}, {"List_item": "3 tablespoons olive oil"}, {"List_item": "8 tablespoons cubed, unsalted butter"},
-      {"List_item": "6 cloves garlic"}, {"List_item": "1/2 teaspoon crushed red pepper flakes"}, {"List_item": "1/2 cup dry white wine"}, {"List_item": "12 oz angel hair pasta"},
-      {"List_item": "1 teaspoon lemon zest and some lemon juice"}, {"List_item": "1/2 cup grated parmesan"}, {"List_item": "1/2 cup chopped parsely"} ],
-    "instructions": [ {"List_item": "Bring a pot of water to a rolling  boil and salt the water"}, {"List_item": "Sprinkle salt onto chicken"}, {"List_item": "Heat a large skillet over medium-high heat until hot, the add oil to pan"},
-      {"List_item": "Brown the chicken in the pan til golden brown but not cooked all the way through (2-3 minutes)"}, {"List_item": "Move chicken to a plate"},
-      {"List_item": "melt 4 tablespoons of butter in skillet, add garlic, red pepper flakes, and cook until garlic is golden brown"}, {"List_item": "Add wine to skillet and bring to simmer and cook until the wine reduces by half then remove from heat"}, 
-      {"List_item": "Cook pasta until al dente and reserve 1 cup of pasta water"}, {"List_item": "Add pasta water to skillet along with chicken, lemon zest and juice and remaining butter"}, 
-      {"List_item": "Stir at medium-low heat until butter is melted in"}, {"List_item": "Removed from heat, sprinkle grated cheeseand parsely on top"}, {"List_item": "YUM"} ],
+    "ingredients": [
+      {
+        "List_item": "Kosher salt"
+      },
+      {
+        "List_item": "1 pound thinly-sliced chicken cutlets"
+      },
+      {
+        "List_item": "3 tablespoons olive oil"
+      },
+      {
+        "List_item": "8 tablespoons cubed, unsalted butter"
+      },
+      {
+        "List_item": "6 cloves garlic"
+      },
+      {
+        "List_item": "1/2 teaspoon crushed red pepper flakes"
+      },
+      {
+        "List_item": "1/2 cup dry white wine"
+      },
+      {
+        "List_item": "12 oz angel hair pasta"
+      },
+      {
+        "List_item": "1 teaspoon lemon zest and some lemon juice"
+      },
+      {
+        "List_item": "1/2 cup grated parmesan"
+      },
+      {
+        "List_item": "1/2 cup chopped parsely"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Bring a pot of water to a rolling  boil and salt the water"
+      },
+      {
+        "List_item": "Sprinkle salt onto chicken"
+      },
+      {
+        "List_item": "Heat a large skillet over medium-high heat until hot, the add oil to pan"
+      },
+      {
+        "List_item": "Brown the chicken in the pan til golden brown but not cooked all the way through (2-3 minutes)"
+      },
+      {
+        "List_item": "Move chicken to a plate"
+      },
+      {
+        "List_item": "melt 4 tablespoons of butter in skillet, add garlic, red pepper flakes, and cook until garlic is golden brown"
+      },
+      {
+        "List_item": "Add wine to skillet and bring to simmer and cook until the wine reduces by half then remove from heat"
+      },
+      {
+        "List_item": "Cook pasta until al dente and reserve 1 cup of pasta water"
+      },
+      {
+        "List_item": "Add pasta water to skillet along with chicken, lemon zest and juice and remaining butter"
+      },
+      {
+        "List_item": "Stir at medium-low heat until butter is melted in"
+      },
+      {
+        "List_item": "Removed from heat, sprinkle grated cheeseand parsely on top"
+      },
+      {
+        "List_item": "YUM"
+      }
+    ],
     "Note": "a little spicy. [ reference: https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-scampi-pasta-5588113 ]",
     "Type": "Entrees"
   },
-
   {
     "Name": "Cream Cheese Stuffed French Toast",
-    "Author": "author: Anonymous",
-    "Servings": "| 4 Servings |",
-    "Time": "| 25 minutes |",
+    "Author": "Anonymous",
+    "Servings": "4",
+    "Time": "25 minutes",
     "Description": "Super yummy french toast with an unconventional twist",
-    "ingredients": [ {"List_item": "8 ounces whipped cream"}, {"List_item":"1 tablespoon brown sugar"}, {"List_item": "1 loaf challah breaf (cut into 8 slices)"}, 
-      {"List_item": "5 eggs"}, {"List_item": "1 cup whole milk"}, {"List_item": "1 teaspoon ground cinnamon"}, {"List_item": "1 teaspoon Vanilla extract"}, {"List_item": "1 tablespoon butter"} ],
-    "instructions": [ {"List_item": "Mix cream cheese and brown sugar in a small bowl until well incorporated"}, {"List_item": "Spread 2 tablespoons of cream cheeese mixture on each  of 4 slices of bread, then press other 4 slices of bread on top to for 4 sandwiches"},
-      {"List_item": "Whisk eggs in 13x9 inch baking dish. Stir in milk, cinnamon and vanilla until well blended"}, {"List_item": "Dip sandwiches in egg mixture, making sure that each side soaks for about 2 minutes"},
-      {"List_item": "Melt butter in large non-stick pan on medium-low heat. Place sandwiches in pan. Cook 4-5 minutes per side or until golden brown"}, {"List_item": "Serve with syrup and fruit"} ],
+    "ingredients": [
+      {
+        "List_item": "8 ounces whipped cream"
+      },
+      {
+        "List_item": "1 tablespoon brown sugar"
+      },
+      {
+        "List_item": "1 loaf challah breaf (cut into 8 slices)"
+      },
+      {
+        "List_item": "5 eggs"
+      },
+      {
+        "List_item": "1 cup whole milk"
+      },
+      {
+        "List_item": "1 teaspoon ground cinnamon"
+      },
+      {
+        "List_item": "1 teaspoon Vanilla extract"
+      },
+      {
+        "List_item": "1 tablespoon butter"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Mix cream cheese and brown sugar in a small bowl until well incorporated"
+      },
+      {
+        "List_item": "Spread 2 tablespoons of cream cheeese mixture on each  of 4 slices of bread, then press other 4 slices of bread on top to for 4 sandwiches"
+      },
+      {
+        "List_item": "Whisk eggs in 13x9 inch baking dish. Stir in milk, cinnamon and vanilla until well blended"
+      },
+      {
+        "List_item": "Dip sandwiches in egg mixture, making sure that each side soaks for about 2 minutes"
+      },
+      {
+        "List_item": "Melt butter in large non-stick pan on medium-low heat. Place sandwiches in pan. Cook 4-5 minutes per side or until golden brown"
+      },
+      {
+        "List_item": "Serve with syrup and fruit"
+      }
+    ],
     "Note": "[ reference: https://www.yellowblissroad.com/creamcheesestuffedfrenchtoast/ ]",
     "Type": "Breakfasts"
   },
-
   {
     "Name": "Cornbread",
-    "Author": "author: Connie Kornbred",
-    "Servings": "| 12 Servings |",
-    "Time": "| 30 minutes |",
+    "Author": "Connie Kornbred",
+    "Servings": "12",
+    "Time": "30 minutes",
     "Description": "Fluffy cornbread!",
-    "ingredients": [ {"List_item": "1/2 cup butter (unsalted)"}, {"List_item":"1 cup all-purpose flour"}, {"List_item": "1 cup yellow cornmeal"}, {"List_item": "1 tablespoon sugar"},
-      {"List_item": "2 teaspoons baking powder"}, {"List_item": "1/2 baking soda"}, {"List_item": "1/2 teaspoon salt"}, {"List_item": "1.5 cup butter milk"}, {"List_item": "2 egg"} ],
-    "instructions": [ {"List_item": "Preheat oven to 400 degrees F"}, {"List_item": "Lightly grease a 9-inch baking dish with butter and place dish in the oven to heat up"},
-      {"List_item": "In a large bowl, whisk together the flour, cornmeal, suagr, baking powder, baking soda, and salt together"}, {"List_item": "Create well in the center of dry ingredients, add buttermilk ang eggs"},
-      {"List_item": "Mix together until fully combined, then add in slightly cooled butter, mix again until everything is fully incorporated"}, {"List_item": "Remove HOT dish from oven and pour batter into hot dish"},
-      {"List_item": "Bake until the cornbread begins to brown on top (20-23 minutes)"}, {"List_item": "Let cool for 10 minutes"} ],
+    "ingredients": [
+      {
+        "List_item": "1/2 cup butter (unsalted)"
+      },
+      {
+        "List_item": "1 cup all-purpose flour"
+      },
+      {
+        "List_item": "1 cup yellow cornmeal"
+      },
+      {
+        "List_item": "1 tablespoon sugar"
+      },
+      {
+        "List_item": "2 teaspoons baking powder"
+      },
+      {
+        "List_item": "1/2 baking soda"
+      },
+      {
+        "List_item": "1/2 teaspoon salt"
+      },
+      {
+        "List_item": "1.5 cup butter milk"
+      },
+      {
+        "List_item": "2 egg"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Preheat oven to 400 degrees F"
+      },
+      {
+        "List_item": "Lightly grease a 9-inch baking dish with butter and place dish in the oven to heat up"
+      },
+      {
+        "List_item": "In a large bowl, whisk together the flour, cornmeal, suagr, baking powder, baking soda, and salt together"
+      },
+      {
+        "List_item": "Create well in the center of dry ingredients, add buttermilk ang eggs"
+      },
+      {
+        "List_item": "Mix together until fully combined, then add in slightly cooled butter, mix again until everything is fully incorporated"
+      },
+      {
+        "List_item": "Remove HOT dish from oven and pour batter into hot dish"
+      },
+      {
+        "List_item": "Bake until the cornbread begins to brown on top (20-23 minutes)"
+      },
+      {
+        "List_item": "Let cool for 10 minutes"
+      }
+    ],
     "Note": "[ reference: https://cafedelites.com/cornbread-recipe/ ]",
     "Type": "Sides"
   },
-
   {
     "Name": "Gamer juice",
-    "Author": "author: me",
-    "Servings": "| 4 Servings |",
-    "Time": "| 30 seconds |",
+    "Author": "me",
+    "Servings": "4",
+    "Time": "30 seconds",
     "Description": "",
-    "ingredients": [ {"List_item": "mountain dew"}, {"List_item":"doritos"} ],
-    "instructions": [ {"List_item": "Take doritos out of bag"}, {"List_item": "Crush doritos"}, {"List_item": "Pour doritos in mountain dew"}, {"List_item": "shake"} ],
+    "ingredients": [
+      {
+        "List_item": "mountain dew"
+      },
+      {
+        "List_item": "doritos"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Take doritos out of bag"
+      },
+      {
+        "List_item": "Crush doritos"
+      },
+      {
+        "List_item": "Pour doritos in mountain dew"
+      },
+      {
+        "List_item": "shake"
+      }
+    ],
     "Note": "Refueled",
     "Type": "Uncategorized"
   },
-
   {
     "Name": "Lasagna",
-    "Author": "author: Steven David",
-    "Servings": "| 12 Servings |",
-    "Time": "| 2 hours, 30 minutes |",
+    "Author": "Steven David",
+    "Servings": "12",
+    "Time": "2 hours, 30 minutes",
     "Description": "The best lasagna you'll ever eat",
-    "ingredients": [ {"List_item": "1 pound sweet italian sausage"}, {"List_item":"3/4 pound lean ground beef"}, {"List_item": "1/2 cup minced onion"}, {"List_item": "2 cloves garlic (crushed)"},
-      {"List_item": "1 can crushed tomato"}, {"List_item": "2 can tomato paste"}, {"List_item": "2 cans canned tomato sauce"}, {"List_item": "1/2 cup water"}, {"List_item": "2 tablespoons sugar"},
-      {"List_item": "1.5 teaspoon dried basil leaves"}, {"List_item": "1/2 teaspoon dried fennel seeds"}, {"List_item": "1 teaspoon Italian seasoning"}, {"List_item": "1.5 teaspoons salt"},
-      {"List_item": "1/4 teaspoon ground pepper"}, {"List_item": "4 tablespoons chopped parsely"}, {"List_item": "12 lasagna noodles"}, {"List_item": "16 oz ricotta cheese"}, {"List_item": "1 egg"},
-      {"List_item": "3/4 pound mozzeralla cheese (sliced)"}, {"List_item": "3/4 cup parmesan cheese (grated)"} ],
-    "instructions": [ {"List_item": "In Dutch oven, cook sausage, ground beef, onion, and garlic over mediim heat until well browned"},
-      {"List_item": "Stir in crushed tomatoes, tomato paste, tomato sauce, andd water"}, {"List_item": "Season with sugar, basil, fennel seeds, italian seasoning, 1 teaspoon ssalt, pepper,, adn 2 tablespoons parsley"}, 
-      {"List_item": "Simmer and cover for about 1.5 hours, stirring occasionally"}, {"List_item": "Boil water in large pot of slightly salted water. Cook lasagna noodles in water for about 8-10 minutes then drain noodles and rinse with cold water"}, 
-      {"List_item": "In a mixing bowl, combine ricotta cheese and egg, along with the remaining parsley and 1/2 teaspoon salt"}, {"List_item": "Preheat Oven to 375 degrees F"}, 
-      {"List_item": "ASSEMBLY - spread 1.5 cups o meat sauce in the bottom of a 9x13-inch baking dish. arrange 6 noodles lengthwise  over meat sauce. Spread with one half of the ricotta cheese miture.  Top with 1/3 mozzarella cheese slices. Spoon 1.5 cups meat sauce over mozzarella and 1/4 cup parmesan cheese."},
-      {"List_item": "Repeat layers, and top with remaining mozzarella and parmesan cheese"}, {"List_item": "COver with foil"}, {"List_item": "bake in oven for 25 minutes"},
-      {"List_item": "Remove foil and bake another 25 minutes"},{"List_item": " Let cool for 15 minutes before enjoying"} ],
+    "ingredients": [
+      {
+        "List_item": "1 pound sweet italian sausage"
+      },
+      {
+        "List_item": "3/4 pound lean ground beef"
+      },
+      {
+        "List_item": "1/2 cup minced onion"
+      },
+      {
+        "List_item": "2 cloves garlic (crushed)"
+      },
+      {
+        "List_item": "1 can crushed tomato"
+      },
+      {
+        "List_item": "2 can tomato paste"
+      },
+      {
+        "List_item": "2 cans canned tomato sauce"
+      },
+      {
+        "List_item": "1/2 cup water"
+      },
+      {
+        "List_item": "2 tablespoons sugar"
+      },
+      {
+        "List_item": "1.5 teaspoon dried basil leaves"
+      },
+      {
+        "List_item": "1/2 teaspoon dried fennel seeds"
+      },
+      {
+        "List_item": "1 teaspoon Italian seasoning"
+      },
+      {
+        "List_item": "1.5 teaspoons salt"
+      },
+      {
+        "List_item": "1/4 teaspoon ground pepper"
+      },
+      {
+        "List_item": "4 tablespoons chopped parsely"
+      },
+      {
+        "List_item": "12 lasagna noodles"
+      },
+      {
+        "List_item": "16 oz ricotta cheese"
+      },
+      {
+        "List_item": "1 egg"
+      },
+      {
+        "List_item": "3/4 pound mozzeralla cheese (sliced)"
+      },
+      {
+        "List_item": "3/4 cup parmesan cheese (grated)"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "In Dutch oven, cook sausage, ground beef, onion, and garlic over mediim heat until well browned"
+      },
+      {
+        "List_item": "Stir in crushed tomatoes, tomato paste, tomato sauce, andd water"
+      },
+      {
+        "List_item": "Season with sugar, basil, fennel seeds, italian seasoning, 1 teaspoon ssalt, pepper,, adn 2 tablespoons parsley"
+      },
+      {
+        "List_item": "Simmer and cover for about 1.5 hours, stirring occasionally"
+      },
+      {
+        "List_item": "Boil water in large pot of slightly salted water. Cook lasagna noodles in water for about 8-10 minutes then drain noodles and rinse with cold water"
+      },
+      {
+        "List_item": "In a mixing bowl, combine ricotta cheese and egg, along with the remaining parsley and 1/2 teaspoon salt"
+      },
+      {
+        "List_item": "Preheat Oven to 375 degrees F"
+      },
+      {
+        "List_item": "ASSEMBLY - spread 1.5 cups o meat sauce in the bottom of a 9x13-inch baking dish. arrange 6 noodles lengthwise  over meat sauce. Spread with one half of the ricotta cheese miture.  Top with 1/3 mozzarella cheese slices. Spoon 1.5 cups meat sauce over mozzarella and 1/4 cup parmesan cheese."
+      },
+      {
+        "List_item": "Repeat layers, and top with remaining mozzarella and parmesan cheese"
+      },
+      {
+        "List_item": "COver with foil"
+      },
+      {
+        "List_item": "bake in oven for 25 minutes"
+      },
+      {
+        "List_item": "Remove foil and bake another 25 minutes"
+      },
+      {
+        "List_item": " Let cool for 15 minutes before enjoying"
+      }
+    ],
     "Note": "[ reference: https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/ ]",
     "Type": "Entrees"
   },
-
   {
     "Name": "egg",
-    "Author": "author: tofu-Chan",
-    "Servings": "| 1 Serving |",
-    "Time": "| 5 minutes |",
+    "Author": "tofu-Chan",
+    "Servings": "1",
+    "Time": "5 minutes",
     "Description": "egg.",
-    "ingredients": [ {"List_item": "butter/cooking spray/oil"}, {"List_item":"egg"}, {"List_item": "pinch of salt (opional)"}, {"List_item": "pinch of ground pepper (optional)"} ],
-    "instructions": [ {"List_item": "Heat a pan on stove top  on medium to medium-high heat"}, {"List_item": "Add butter or oil of choice and coat the entire bottom of pan"},
-      {"List_item": "Let pan get hot"}, {"List_item": "Crack egg into pan"}, {"List_item": "Flip egg (optional)"}, {"List_item": "Add salt and pepper (optional)"},
-      {"List_item": "Let egg cook until egg white turn white and/or yolk is cooked to personal taste"}, {"List_item": "Remove egg from heat"}, {"List_item": "Eat egg."} ],
+    "ingredients": [
+      {
+        "List_item": "butter/cooking spray/oil"
+      },
+      {
+        "List_item": "egg"
+      },
+      {
+        "List_item": "pinch of salt (opional)"
+      },
+      {
+        "List_item": "pinch of ground pepper (optional)"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Heat a pan on stove top  on medium to medium-high heat"
+      },
+      {
+        "List_item": "Add butter or oil of choice and coat the entire bottom of pan"
+      },
+      {
+        "List_item": "Let pan get hot"
+      },
+      {
+        "List_item": "Crack egg into pan"
+      },
+      {
+        "List_item": "Flip egg (optional)"
+      },
+      {
+        "List_item": "Add salt and pepper (optional)"
+      },
+      {
+        "List_item": "Let egg cook until egg white turn white and/or yolk is cooked to personal taste"
+      },
+      {
+        "List_item": "Remove egg from heat"
+      },
+      {
+        "List_item": "Eat egg."
+      }
+    ],
     "Note": "egg",
     "Type": "Breakfasts"
   },
-
   {
     "Name": "Mashed Potatoes",
-    "Author": "author: Old man Jenkins",
-    "Servings": "| 4 Servings |",
-    "Time": "| 35 minutes |",
+    "Author": "Old man Jenkins",
+    "Servings": "4",
+    "Time": "35 minutes",
     "Description": "basic potato mash",
-    "ingredients": [ {"List_item": "2 pounds baking potato (peeled and quartered)"}, {"List_item":"2 tablespoons butter"}, {"List_item": "1 cup milk"}, {"List_item": "salt and pepper to taste"} ],
-    "instructions": [ {"List_item": "Bring pot of saltd water to a boil."}, {"List_item": "Add potatoes and cook until tender but slightly firm (~15 minutes), then drain"},
-      {"List_item": "IN small saucepan heat butter and milk over low heat until butter is melted. Using a potato masher, slowly blend milk mixture into potatoes until smooth  and creamy"},
-      {"List_item": "Season with salt and pepper to taste"} ],
+    "ingredients": [
+      {
+        "List_item": "2 pounds baking potato (peeled and quartered)"
+      },
+      {
+        "List_item": "2 tablespoons butter"
+      },
+      {
+        "List_item": "1 cup milk"
+      },
+      {
+        "List_item": "salt and pepper to taste"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Bring pot of saltd water to a boil."
+      },
+      {
+        "List_item": "Add potatoes and cook until tender but slightly firm (~15 minutes), then drain"
+      },
+      {
+        "List_item": "IN small saucepan heat butter and milk over low heat until butter is melted. Using a potato masher, slowly blend milk mixture into potatoes until smooth  and creamy"
+      },
+      {
+        "List_item": "Season with salt and pepper to taste"
+      }
+    ],
     "Note": "Personally i like garlic powder in my mashed potatoes too. [ reference: https://www.allrecipes.com/recipe/24771/basic-mashed-potatoes/ ]",
     "Type": "Sides"
   },
-
   {
     "Name": "Hot Chocolate",
-    "Author": "author: Mama Mary",
-    "Servings": "| 4 Servings |",
-    "Time": "| 6 minutes |",
+    "Author": "Mama Mary",
+    "Servings": "4",
+    "Time": "6 minutes",
     "Description": "creamy hot choccy",
-    "ingredients": [ {"List_item": "4 cups milk (2%)"}, {"List_item":"1/4 cup unsweeted cocoa powder"}, {"List_item": "1/4 cup granulated sugar"}, {"List_item": "1/2 cup bittersweet chocolate chips"},
-      {"List_item": "1/4 teaspoon pure vanilla extract"} ],
-    "instructions": [ {"List_item": "Place milk, cocoa powder and sugar in a small saucepan"}, {"List_item": "heat over medium/medium-low heat, whisk often, until warm"}, 
-      {"List_item": "Add chocolate chips and whisk constantly untl chocolate chips and melted and evenly distributed into milk"}, {"List_item": "Whisk vanilla extract in"},
-      {"List_item": "Serve Immediately"} ],
+    "ingredients": [
+      {
+        "List_item": "4 cups milk (2%)"
+      },
+      {
+        "List_item": "1/4 cup unsweeted cocoa powder"
+      },
+      {
+        "List_item": "1/4 cup granulated sugar"
+      },
+      {
+        "List_item": "1/2 cup bittersweet chocolate chips"
+      },
+      {
+        "List_item": "1/4 teaspoon pure vanilla extract"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Place milk, cocoa powder and sugar in a small saucepan"
+      },
+      {
+        "List_item": "heat over medium/medium-low heat, whisk often, until warm"
+      },
+      {
+        "List_item": "Add chocolate chips and whisk constantly untl chocolate chips and melted and evenly distributed into milk"
+      },
+      {
+        "List_item": "Whisk vanilla extract in"
+      },
+      {
+        "List_item": "Serve Immediately"
+      }
+    ],
     "Note": "It says 4 servings but feel free to drink it all yourself. [ referernce:https://celebratingsweets.com/homemade-hot-chocolate/ ]",
     "Type": "Uncategorized"
   },
-
   {
     "Name": "Belgiun waffles",
-    "Author": "author: Nicole",
-    "Servings": "| 8 Servings |",
-    "Time": "| 35 minutes |",
+    "Author": "Nicole",
+    "Servings": "8",
+    "Time": "35 minutes",
     "Description": "Golden brown Belgiun style waffles",
-    "ingredients": [ {"List_item": "2.25 cup sall purpose flour"}, {"List_item":"1 tablespoon baking powder"}, {"List_item": "3 tablespoon sugar"}, {"List_item": "1/2 teaspoon salt"},
-      {"List_item": "1 Teaspoon cinnnamon"}, {"List_item": "2 large eggs (separated)"}, {"List_item": "1/2 cp vegetable oil"}, {"List_item": "2 cups milk"}, {"List_item": "1 teaspoons vanilla extract"} ],
-    "instructions": [ {"List_item": "Preheat waffle iron and spray with non-stick cooking spray"}, {"List_item": "in a large bowl whisk together the flour, baking powder, salt, sugar, cinnamon"},
-      {"List_item": "In a medium bowl beat the egg whites with a hand mixer until stiff peaks form"}, {"List_item": "In a separate medium bowl mix together the egg yolks, vegetable oil, milk, and vanilla extract"},
-      {"List_item": "Add the egg yolk mixture to the dry ingredients and mix well"}, {"List_item": "Fold in the egg whites"}, {"List_item":"Pour the batter onto your hot waffle iron and cook according to manufacturer's directions"},
-      {"List_item": "Serve immediately with butter, syrup, powdered sugar or any other favorite toppings"} ],
+    "ingredients": [
+      {
+        "List_item": "2.25 cup sall purpose flour"
+      },
+      {
+        "List_item": "1 tablespoon baking powder"
+      },
+      {
+        "List_item": "3 tablespoon sugar"
+      },
+      {
+        "List_item": "1/2 teaspoon salt"
+      },
+      {
+        "List_item": "1 Teaspoon cinnnamon"
+      },
+      {
+        "List_item": "2 large eggs (separated)"
+      },
+      {
+        "List_item": "1/2 cp vegetable oil"
+      },
+      {
+        "List_item": "2 cups milk"
+      },
+      {
+        "List_item": "1 teaspoons vanilla extract"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Preheat waffle iron and spray with non-stick cooking spray"
+      },
+      {
+        "List_item": "in a large bowl whisk together the flour, baking powder, salt, sugar, cinnamon"
+      },
+      {
+        "List_item": "In a medium bowl beat the egg whites with a hand mixer until stiff peaks form"
+      },
+      {
+        "List_item": "In a separate medium bowl mix together the egg yolks, vegetable oil, milk, and vanilla extract"
+      },
+      {
+        "List_item": "Add the egg yolk mixture to the dry ingredients and mix well"
+      },
+      {
+        "List_item": "Fold in the egg whites"
+      },
+      {
+        "List_item": "Pour the batter onto your hot waffle iron and cook according to manufacturer's directions"
+      },
+      {
+        "List_item": "Serve immediately with butter, syrup, powdered sugar or any other favorite toppings"
+      }
+    ],
     "Note": "Need waffle iron. [ reference: https://thesaltymarshmallow.com/homemade-belgian-waffle-recipe/ ]",
     "Type": "Breakfasts"
   },
-
   {
     "Name": "Hong Kong-Style Egg Waffle",
-    "Author": "author: Alvin",
-    "Servings": "| 3 Servings |",
-    "Time": "| 1 hour, 15 minutes |",
+    "Author": "Alvin",
+    "Servings": "3",
+    "Time": "1 hour, 15 minutes",
     "Description": "Also known as Bubble Waffle",
-    "ingredients": [ {"List_item": "1 cup all purpose flour, plus 2 tbsp"}, {"List_item":"2 teaspoons baking powder"}, {"List_item": "1 tablespoon custard powder"}, {"List_item": "3 tablespoons tapioca starch, plus 1 1/2 teaspoons"},
-      {"List_item": "2 large eggs"}, {"List_item": "1/2 cup sugar, plsu 3 tablespoons"}, {"List_item": "1/2 cup water, plus 2 tablespoons"}, {"List_item": "1 tablespoon evaporated milk, plus 2.25 teaspoons"}, {"List_item": "1 teaspoon vanilla extract"},
-      {"List_item": "2 tablespoons vegetable oil"}, {"List_item": "oil, for greasing waffle machine"} ],
-    "instructions": [ {"List_item": "In a medium bowl, sift together the flour, baking powder, custard powder, and tapioca starch. Set aside."}, {"List_item": "Set up a double boiler over medium heat. Add the eggs and sugar to the top bowl, whisking vigorously until the sugar is dissolved and the mixture has thickened slightly, about 5 minutes."},
-      {"List_item": "Add the water and evaporated milk to the egg mixture and stir to combine."}, {"List_item": "Slowly add the dry ingredients to egg mixture and mix until well combined."},
-      {"List_item": "Stir in the vanilla and vegetable oil."}, {"List_item": "Pour the batter through a fine-mesh strainer into a clean bowl to catch any lumps."}, {"List_item": "Cover the bowl with plastic wrap and let the batter rest in the refrigerator for at least 1 hour, or overnight"},
-      {"List_item": "Transfer the batter to a spouted liquid measuring cup for easy pouring."}, {"List_item": "Set an egg waffle machine and set to 400°F (200°C). Grease lightly with oil. Add about 1 cup of batter to the machine and cook for 2½ minutes, until crispy and slightly brown. Using a rubber spatula, transfer the waffle to a wire rack to cool slightly. To achieve a round shape, lay the waffle over a curved surface, such as a rolling pin, to cool. Repeat with the remaining batter."},
-      {"List_item": "Serve when the shell has cooled and become crisp, but is still slightly warm."}, {"List_item": "Enjoy!"} ],
+    "ingredients": [
+      {
+        "List_item": "1 cup all purpose flour, plus 2 tbsp"
+      },
+      {
+        "List_item": "2 teaspoons baking powder"
+      },
+      {
+        "List_item": "1 tablespoon custard powder"
+      },
+      {
+        "List_item": "3 tablespoons tapioca starch, plus 1 1/2 teaspoons"
+      },
+      {
+        "List_item": "2 large eggs"
+      },
+      {
+        "List_item": "1/2 cup sugar, plsu 3 tablespoons"
+      },
+      {
+        "List_item": "1/2 cup water, plus 2 tablespoons"
+      },
+      {
+        "List_item": "1 tablespoon evaporated milk, plus 2.25 teaspoons"
+      },
+      {
+        "List_item": "1 teaspoon vanilla extract"
+      },
+      {
+        "List_item": "2 tablespoons vegetable oil"
+      },
+      {
+        "List_item": "oil, for greasing waffle machine"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "In a medium bowl, sift together the flour, baking powder, custard powder, and tapioca starch. Set aside."
+      },
+      {
+        "List_item": "Set up a double boiler over medium heat. Add the eggs and sugar to the top bowl, whisking vigorously until the sugar is dissolved and the mixture has thickened slightly, about 5 minutes."
+      },
+      {
+        "List_item": "Add the water and evaporated milk to the egg mixture and stir to combine."
+      },
+      {
+        "List_item": "Slowly add the dry ingredients to egg mixture and mix until well combined."
+      },
+      {
+        "List_item": "Stir in the vanilla and vegetable oil."
+      },
+      {
+        "List_item": "Pour the batter through a fine-mesh strainer into a clean bowl to catch any lumps."
+      },
+      {
+        "List_item": "Cover the bowl with plastic wrap and let the batter rest in the refrigerator for at least 1 hour, or overnight"
+      },
+      {
+        "List_item": "Transfer the batter to a spouted liquid measuring cup for easy pouring."
+      },
+      {
+        "List_item": "Set an egg waffle machine and set to 400°F (200°C). Grease lightly with oil. Add about 1 cup of batter to the machine and cook for 2½ minutes, until crispy and slightly brown. Using a rubber spatula, transfer the waffle to a wire rack to cool slightly. To achieve a round shape, lay the waffle over a curved surface, such as a rolling pin, to cool. Repeat with the remaining batter."
+      },
+      {
+        "List_item": "Serve when the shell has cooled and become crisp, but is still slightly warm."
+      },
+      {
+        "List_item": "Enjoy!"
+      }
+    ],
     "Note": "[ reference: https://tasty.co/recipe/hong-kong-style-egg-waffle-recipe ]",
     "Type": "Breakfasts"
   },
-
   {
     "Name": "Brussels' Waffle",
-    "Author": "author: Gary",
-    "Servings": "| 2 Servings |",
-    "Time": "| 1 hour, 15 miunutes |",
+    "Author": "Gary",
+    "Servings": "2",
+    "Time": "1 hour, 15 miunutes",
     "Description": "Waffle from Brussels",
-    "ingredients": [ {"List_item": "1/2 kg all-purpose flour"}, {"List_item":"5 eggs (separated)"}, {"List_item": "3/4 cup milk"}, {"List_item": "250 g butter (melted and cooled to lukewarm)"},
-      {"List_item": "32.5 g active dry yeast"}, {"List_item": "a pinch of salt"}, {"List_item": "2 packets vanilla sugar"} ],
-    "instructions": [ {"List_item": "Set aside a small bowl of milk"}, {"List_item": "In a large bowl, whisk together the egg yolks, flour, rest of milk, melted butter, vanilla sugar and salt"},
-      {"List_item": "Heat the small bowl of milk (lukewarm) and dissolve yeast. Stir well. Let stand until foamy, about 10 minutes. Stir the yeast mixture into the batter"}, {"List_item": "Beat the egg whites until they form soft peaks, gently fold into the batter"},
-      {"List_item": "Cover the large bowl with a clean cloth and let rise the batter in a warm place until doubled in volume, about 1 hour"}, {"List_item": "Bake your waffles using a waffle iron with large holes. Preheat the waffle iron. Brush it with oil. Spoon a small ladle of batter inside the edges of the iron. Close the lid and turn the waffle iron over in order for the batter to spread evenly in both parts."},
-      {"List_item": "Bake until steam no longer escapes from the iron. After a few minutes, the waffle is golden brown. Serve immediately"} ],
+    "ingredients": [
+      {
+        "List_item": "1/2 kg all-purpose flour"
+      },
+      {
+        "List_item": "5 eggs (separated)"
+      },
+      {
+        "List_item": "3/4 cup milk"
+      },
+      {
+        "List_item": "250 g butter (melted and cooled to lukewarm)"
+      },
+      {
+        "List_item": "32.5 g active dry yeast"
+      },
+      {
+        "List_item": "a pinch of salt"
+      },
+      {
+        "List_item": "2 packets vanilla sugar"
+      }
+    ],
+    "instructions": [
+      {
+        "List_item": "Set aside a small bowl of milk"
+      },
+      {
+        "List_item": "In a large bowl, whisk together the egg yolks, flour, rest of milk, melted butter, vanilla sugar and salt"
+      },
+      {
+        "List_item": "Heat the small bowl of milk (lukewarm) and dissolve yeast. Stir well. Let stand until foamy, about 10 minutes. Stir the yeast mixture into the batter"
+      },
+      {
+        "List_item": "Beat the egg whites until they form soft peaks, gently fold into the batter"
+      },
+      {
+        "List_item": "Cover the large bowl with a clean cloth and let rise the batter in a warm place until doubled in volume, about 1 hour"
+      },
+      {
+        "List_item": "Bake your waffles using a waffle iron with large holes. Preheat the waffle iron. Brush it with oil. Spoon a small ladle of batter inside the edges of the iron. Close the lid and turn the waffle iron over in order for the batter to spread evenly in both parts."
+      },
+      {
+        "List_item": "Bake until steam no longer escapes from the iron. After a few minutes, the waffle is golden brown. Serve immediately"
+      }
+    ],
     "Note": "[ reference: https://visit.brussels/en/article/brussels-waffles ]",
     "Type": "Breakfasts"
   }
